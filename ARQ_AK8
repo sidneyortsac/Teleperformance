@@ -1,0 +1,98 @@
+  000001CONTAS A RECEBER                                            FINA040   2
+  000002CONTAS A PAGAR                                              FINA050   2
+  000003TRANSFERENCIAS - FINANCEIRO                                 FINA060   2
+  000004BAIXAS A RECEBER                                            FINA070   2
+  000005BAIXAS A PAGAR                                              FINA080   2
+  000006BAIXAS A PAGAR AUTOMATICA                                   FINA090   2
+  000007MOVIMENTACAO BANCARIA                                       FINA100   2
+  000008APLICACOES FINANCEIRAS/EMPRESTIMOS                          FINA171   2
+  000009RESGATE DE APLICACOES/EMPRESTIMOS                           FINA181   2
+  000010APROPRIACAO DE APLICACOES/EMPRESTIMO                        FINA182   2
+  000011APROPRIACAO DE APLICACAO POR COTAS                          FINA183   2
+  000012BAIXAS A RECEBER AUTOMATICA                                 FINA110   2
+  000014FATURAS A RECEBER                                           FINA280   2
+  000015FATURAS A PAGAR                                             FINA290   2
+  000016COMPENSACAO CR                                              FINA330   2
+  000017COMPENSACAO CP                                              FINA340   2
+  000018COMPENSACAO ENTRE CARTEIRAS                                 FINA450   2
+  000019VARIACAO MONETARIA                                          FINA350   2
+  000020RETORNO DE COMUNICACAO BANCARIA A PAGAR                     FINA430   2
+  000021CONTAS A PAGAR-RATEIO                                       FINA050   2
+  000022RETORNO DE COMUNICACAO BANCARIA (SISPAG)                    FINA300   2
+  000023BORDERO DE PAGAMENTOS                                       FINA241   2
+  000024Baixas a Pagar Automática Multi-Filiais                     FINA091   2
+  000050CONTRATO DE PARCERIA                                        MATA125   2
+  000051SOLICITACAO DE COMPRAS                                      MATA110   2
+  000052PEDIDO DE COMPRAS                                           MATA121   2
+  000053AUTORIZACAO DE ENTREGA                                      MATA122   2
+  000054DOCUMENTO DE ENTRADA                                        MATA103   2
+  000055LIBERACAO DE PEDIDO DE COMPRAS                              MATA097   2
+  000056Eliminacao de residuos                                      MATA235   2
+  000057Encerramento de Pré-Requisição                              MATA185   2
+  000080Cadastro de vagas para contratacao                          RSPA100   2
+  000082Contabilizacao                                              CTBA105   2
+  000083Itens - Contabilizacao                                      CSAA090   2
+  000084Cadastro de Funcionarios                                    GPEA010   2
+  000085Fechamento mensal da folha                                  GPEM120   2
+  000086Transferencia de funcionarios                               GPEA180   2
+  000087Reajuste Salarial                                           GPER200   2
+  000088Dissidio retroativo                                         GPCR001   2
+  000089Calculo de Ferias                                           GPEM030   2
+  000090Calculo de Rescisao                                         GPEM040   2
+  000091Provisao de Ferias/13.Salario                               GPEA070   2
+  000092Movimentacao de Titulos (RC1)                               GPEM660   2
+  000100PEDIDO DE VENDAS                                            MATA410   2
+  000101NOTA FISCAL DE SAIDA                                        MATA461   2
+  000103Liberacao de Pedido de Vendas                               MATA440   2
+  000104PAGAMENTO DA COMISSAO DE VENDEDORES                         MATA530   2
+  000150Solicitacao ao armazem                                      MATA105   2
+  000151MOVIMENTOS INTERNOS                                         MATA240   2
+  000152PRODUCAO                                                    MATA250   2
+  000153ACERTO DO INVENTARIO                                        MATA340   2
+  000154INCLUSAO DE ATIVO FIXO                                      ATFA010   2
+  000155Metas de Vendas - Faturamento                               FATA050   2
+  000250APURACAO DE ICMS                                            MATA953   2
+  000251APURACAO DE IPI                                             MATA955   2
+  000252PLANILHA ORCAMENTARIA                                       PCOA100   2
+  000255Saldos CTB                                                  PCOA330   2
+  000300NOTA DE SAIDA MANUAL E DE BENDEFICIAMENTO A CLIENTE         MATA467N  2
+  000301REMITO DE SAIDA MANUAL E DE BENDEFICIAMENTO A CLIENTE       MATA462N  2
+  000302REMITO DE DEVOLUCAO (FATURAMENTO)                           MATA462DN 2
+  000303REMITO DE RETORNO SIMBOLICO (FATURAMENTO)                   MATA462R  2
+  000304REMITO DE TRANSFERENCIA                                     MATA462TN 2
+  000305REMITO DE DEVOLUCAO (COMPRAS)                               MATA102DN 2
+  000306NOTA DE ENTRADA MANUAL                                      MATA101N  2
+  000307REMITO DE ENTRADA MANUAL E DE BENEFICIAMENTO A CLIENTE      MATA102N  2
+  000308NOTA DE DEBITO A CLIENTE                                    MATA465N  2
+  000309NOTA DE CREDITO A CLIENTE                                   MATA465N  2
+  000310NOTA DE DEBITO A FORNECEDOR                                 MATA466N  2
+  000311NOTA DE CREDITO A FORNECEDOR                                MATA466N  2
+  000312RECIBO DE SERVICOS (COMPRAS)                                MATA466N  2
+  000313ORDENS DE PAGAMENTO                                         FINA085A  2
+  000314RECALCULO DO CUSTO MEDIO                                    MATA330   2
+  000340Documento Hábil                                             FINA761   2
+  000350Geracao de projeto                                          PMSA110   2
+  000351Mudanca de fase do projeto                                  PMSA200   2
+  000354PLANILHA DE CONTRATO                                        CNTA300   2
+  000355MEDIÇÃO DE CONTRATO                                         CNTA120   2
+  000356Liberacao de Solicitacao de Contingencia                    PCOA530   2
+  000357Cronograma do Contrato                                      CNTA300   2
+  000358Planejamento orcamentario                                   PCOXPNJ   2
+  000359Caixinha                                                    FINA550   2
+  000362Geração de Notas (Faturamento)                              MATA468N  2
+  000374Simulação de Depreciação                                    ATFA350   2
+  000363Cálculo da Depreciação                                      ATFA050   2
+  000364Descalculo de Depreciação                                   ATFA070   2
+  000365Depreciação Acelerada                                       ATFA171   2
+  000366Aquisição por Transferencia                                 ATFA250   2
+  000368Transferencia de Ativos                                     ATFA060   2
+  000369Ampliação                                                   ATFA150   2
+  000370Baixa com Cálculo de Depreciação                            ATFA036   2
+  000371Baixa sem Calculo de depreciação                            ATFA036   2
+  000372Baixa de Adiantamento com Calculo de depreciação            ATFA040   2
+  000373Baixa de Adiantamento Sem Cálculo de Depreciação            ATFA045   2
+  000375Importação de Arquivos                                      PCOA009   2
+  000376Rateio PC                                                   MATA120   2
+  000377Registro de Treinamento                                     TRMA050   2
+  000400Nota de Empenho                                             GCPA400   2
+  000401Pedido de Viagem                                            PCOXRES   2

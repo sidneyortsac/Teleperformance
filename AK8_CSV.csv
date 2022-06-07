@@ -1,0 +1,99 @@
+﻿AK8_FILIAL;AK8_CODIGO;AK8_DESCRI;AK8_FUNCAO;AK8_VISUAL;AK8_PROPLC
+"  ";000001;"CONTAS A RECEBER                                            ";"FINA040   ";2;NULL
+"  ";000002;"CONTAS A PAGAR                                              ";"FINA050   ";2;NULL
+"  ";000003;"TRANSFERENCIAS - FINANCEIRO                                 ";"FINA060   ";2;NULL
+"  ";000004;"BAIXAS A RECEBER                                            ";"FINA070   ";2;NULL
+"  ";000005;"BAIXAS A PAGAR                                              ";"FINA080   ";2;NULL
+"  ";000006;"BAIXAS A PAGAR AUTOMATICA                                   ";"FINA090   ";2;NULL
+"  ";000007;"MOVIMENTACAO BANCARIA                                       ";"FINA100   ";2;NULL
+"  ";000008;"APLICACOES FINANCEIRAS/EMPRESTIMOS                          ";"FINA171   ";2;NULL
+"  ";000009;"RESGATE DE APLICACOES/EMPRESTIMOS                           ";"FINA181   ";2;NULL
+"  ";000010;"APROPRIACAO DE APLICACOES/EMPRESTIMO                        ";"FINA182   ";2;NULL
+"  ";000011;"APROPRIACAO DE APLICACAO POR COTAS                          ";"FINA183   ";2;NULL
+"  ";000012;"BAIXAS A RECEBER AUTOMATICA                                 ";"FINA110   ";2;NULL
+"  ";000014;"FATURAS A RECEBER                                           ";"FINA280   ";2;NULL
+"  ";000015;"FATURAS A PAGAR                                             ";"FINA290   ";2;NULL
+"  ";000016;"COMPENSACAO CR                                              ";"FINA330   ";2;NULL
+"  ";000017;"COMPENSACAO CP                                              ";"FINA340   ";2;NULL
+"  ";000018;"COMPENSACAO ENTRE CARTEIRAS                                 ";"FINA450   ";2;NULL
+"  ";000019;"VARIACAO MONETARIA                                          ";"FINA350   ";2;NULL
+"  ";000020;"RETORNO DE COMUNICACAO BANCARIA A PAGAR                     ";"FINA430   ";2;NULL
+"  ";000021;"CONTAS A PAGAR-RATEIO                                       ";"FINA050   ";2;NULL
+"  ";000022;"RETORNO DE COMUNICACAO BANCARIA (SISPAG)                    ";"FINA300   ";2;NULL
+"  ";000023;"BORDERO DE PAGAMENTOS                                       ";"FINA241   ";2;NULL
+"  ";000024;"Baixas a Pagar Automática Multi-Filiais                     ";"FINA091   ";2;NULL
+"  ";000050;"CONTRATO DE PARCERIA                                        ";"MATA125   ";2;NULL
+"  ";000051;"SOLICITACAO DE COMPRAS                                      ";"MATA110   ";2;NULL
+"  ";000052;"PEDIDO DE COMPRAS                                           ";"MATA121   ";2;NULL
+"  ";000053;"AUTORIZACAO DE ENTREGA                                      ";"MATA122   ";2;NULL
+"  ";000054;"DOCUMENTO DE ENTRADA                                        ";"MATA103   ";2;NULL
+"  ";000055;"LIBERACAO DE PEDIDO DE COMPRAS                              ";"MATA097   ";2;NULL
+"  ";000056;"Eliminacao de residuos                                      ";"MATA235   ";2;NULL
+"  ";000057;"Encerramento de Pré-Requisição                              ";"MATA185   ";2;NULL
+"  ";000080;"Cadastro de vagas para contratacao                          ";"RSPA100   ";2;NULL
+"  ";000082;"Contabilizacao                                              ";"CTBA105   ";2;NULL
+"  ";000083;"Itens - Contabilizacao                                      ";"CSAA090   ";2;NULL
+"  ";000084;"Cadastro de Funcionarios                                    ";"GPEA010   ";2;NULL
+"  ";000085;"Fechamento mensal da folha                                  ";"GPEM120   ";2;NULL
+"  ";000086;"Transferencia de funcionarios                               ";"GPEA180   ";2;NULL
+"  ";000087;"Reajuste Salarial                                           ";"GPER200   ";2;NULL
+"  ";000088;"Dissidio retroativo                                         ";"GPCR001   ";2;NULL
+"  ";000089;"Calculo de Ferias                                           ";"GPEM030   ";2;NULL
+"  ";000090;"Calculo de Rescisao                                         ";"GPEM040   ";2;NULL
+"  ";000091;"Provisao de Ferias/13.Salario                               ";"GPEA070   ";2;NULL
+"  ";000092;"Movimentacao de Titulos (RC1)                               ";"GPEM660   ";2;NULL
+"  ";000100;"PEDIDO DE VENDAS                                            ";"MATA410   ";2;NULL
+"  ";000101;"NOTA FISCAL DE SAIDA                                        ";"MATA461   ";2;NULL
+"  ";000103;"Liberacao de Pedido de Vendas                               ";"MATA440   ";2;NULL
+"  ";000104;"PAGAMENTO DA COMISSAO DE VENDEDORES                         ";"MATA530   ";2;NULL
+"  ";000150;"Solicitacao ao armazem                                      ";"MATA105   ";2;NULL
+"  ";000151;"MOVIMENTOS INTERNOS                                         ";"MATA240   ";2;NULL
+"  ";000152;"PRODUCAO                                                    ";"MATA250   ";2;NULL
+"  ";000153;"ACERTO DO INVENTARIO                                        ";"MATA340   ";2;NULL
+"  ";000154;"INCLUSAO DE ATIVO FIXO                                      ";"ATFA010   ";2;NULL
+"  ";000155;"Metas de Vendas - Faturamento                               ";"FATA050   ";2;NULL
+"  ";000250;"APURACAO DE ICMS                                            ";"MATA953   ";2;NULL
+"  ";000251;"APURACAO DE IPI                                             ";"MATA955   ";2;NULL
+"  ";000252;"PLANILHA ORCAMENTARIA                                       ";"PCOA100   ";2;NULL
+"  ";000255;"Saldos CTB                                                  ";"PCOA330   ";2;NULL
+"  ";000300;"NOTA DE SAIDA MANUAL E DE BENDEFICIAMENTO A CLIENTE         ";"MATA467N  ";2;NULL
+"  ";000301;"REMITO DE SAIDA MANUAL E DE BENDEFICIAMENTO A CLIENTE       ";"MATA462N  ";2;NULL
+"  ";000302;"REMITO DE DEVOLUCAO (FATURAMENTO)                           ";"MATA462DN ";2;NULL
+"  ";000303;"REMITO DE RETORNO SIMBOLICO (FATURAMENTO)                   ";"MATA462R  ";2;NULL
+"  ";000304;"REMITO DE TRANSFERENCIA                                     ";"MATA462TN ";2;NULL
+"  ";000305;"REMITO DE DEVOLUCAO (COMPRAS)                               ";"MATA102DN ";2;NULL
+"  ";000306;"NOTA DE ENTRADA MANUAL                                      ";"MATA101N  ";2;NULL
+"  ";000307;"REMITO DE ENTRADA MANUAL E DE BENEFICIAMENTO A CLIENTE      ";"MATA102N  ";2;NULL
+"  ";000308;"NOTA DE DEBITO A CLIENTE                                    ";"MATA465N  ";2;NULL
+"  ";000309;"NOTA DE CREDITO A CLIENTE                                   ";"MATA465N  ";2;NULL
+"  ";000310;"NOTA DE DEBITO A FORNECEDOR                                 ";"MATA466N  ";2;NULL
+"  ";000311;"NOTA DE CREDITO A FORNECEDOR                                ";"MATA466N  ";2;NULL
+"  ";000312;"RECIBO DE SERVICOS (COMPRAS)                                ";"MATA466N  ";2;NULL
+"  ";000313;"ORDENS DE PAGAMENTO                                         ";"FINA085A  ";2;NULL
+"  ";000314;"RECALCULO DO CUSTO MEDIO                                    ";"MATA330   ";2;NULL
+"  ";000340;"Documento Hábil                                             ";"FINA761   ";2;NULL
+"  ";000350;"Geracao de projeto                                          ";"PMSA110   ";2;NULL
+"  ";000351;"Mudanca de fase do projeto                                  ";"PMSA200   ";2;NULL
+"  ";000354;"PLANILHA DE CONTRATO                                        ";"CNTA300   ";2;NULL
+"  ";000355;"MEDIÇÃO DE CONTRATO                                         ";"CNTA120   ";2;NULL
+"  ";000356;"Liberacao de Solicitacao de Contingencia                    ";"PCOA530   ";2;NULL
+"  ";000357;"Cronograma do Contrato                                      ";"CNTA300   ";2;NULL
+"  ";000358;"Planejamento orcamentario                                   ";"PCOXPNJ   ";2;NULL
+"  ";000359;"Caixinha                                                    ";"FINA550   ";2;NULL
+"  ";000362;"Geração de Notas (Faturamento)                              ";"MATA468N  ";2;NULL
+"  ";000374;"Simulação de Depreciação                                    ";"ATFA350   ";2;NULL
+"  ";000363;"Cálculo da Depreciação                                      ";"ATFA050   ";2;NULL
+"  ";000364;"Descalculo de Depreciação                                   ";"ATFA070   ";2;NULL
+"  ";000365;"Depreciação Acelerada                                       ";"ATFA171   ";2;NULL
+"  ";000366;"Aquisição por Transferencia                                 ";"ATFA250   ";2;NULL
+"  ";000368;"Transferencia de Ativos                                     ";"ATFA060   ";2;NULL
+"  ";000369;"Ampliação                                                   ";"ATFA150   ";2;NULL
+"  ";000370;"Baixa com Cálculo de Depreciação                            ";"ATFA036   ";2;NULL
+"  ";000371;"Baixa sem Calculo de depreciação                            ";"ATFA036   ";2;NULL
+"  ";000372;"Baixa de Adiantamento com Calculo de depreciação            ";"ATFA040   ";2;NULL
+"  ";000373;"Baixa de Adiantamento Sem Cálculo de Depreciação            ";"ATFA045   ";2;NULL
+"  ";000375;"Importação de Arquivos                                      ";"PCOA009   ";2;NULL
+"  ";000376;"Rateio PC                                                   ";"MATA120   ";2;NULL
+"  ";000377;"Registro de Treinamento                                     ";"TRMA050   ";2;NULL
+"  ";000400;"Nota de Empenho                                             ";"GCPA400   ";2;NULL
+"  ";000401;"Pedido de Viagem                                            ";"PCOXRES   ";2;NULL
