@@ -1,0 +1,95 @@
+Tabelas Relativas ao Módulo PCO e suas características :
+
+AK1     Planilhas Orçamentárias Orçamento       Cadastro
+AK2	Itens Do Orçamento	Orçamento	Cadastro
+AK3	Estrutura Do Orçamento	Orçamento	Cadastro
+AK5	Contas Orçamentárias	Geral		Cadastro
+AK6	Classes Orçamentárias	Geral		Cadastro
+AK8	Processos De Sistema	Orçamento	Cadastro
+AK9	Estrutura De Processo	Orçamento	Cadastro
+AKA	Pontos De Bloqueio	Orçamento	Cadastro
+AKB	Pontos De Lançamentos	Orçamento	Cadastro
+AKC	Config De Lançamento	Orçamento	Cadastro
+AKD	Lançamentos		Orçamento	Movimentos
+AKE	Rev Plan. Orçamentária	Orçamento	Cadastro
+AKF	Operações Orçamentárias	Orçamento	Cadastro
+AKG	Users Plan.Orçamentári	Orçamento	Cadastro
+AKH	Configuração Bloqueios	Orçamento	Cadastro
+AKI	Config Lanctos Bloqueio	Orçamento	Cadastro
+AKJ	Tipos De Bloqueio	Orçamento	Cadastro
+AKK	Totais Da Planilha	Orçamento	Cadastro
+AKL	Cab.Conf Vis Gerencial	Orçamento	Cadastro
+AKM	Itens Conf Vis Gerencia	Orçamento	Cadastro
+AKN	Visão Gerencial Orçamen	Orçamento	Cadastro
+AKO	Cta Gerencial Orçament	Orçamento	Cadastro
+AKP	Filtro Cta Ger Orçamen	Orçamento	Cadastro
+AKQ	Totais Visões Gerencial	Orçamento	Saldos
+AKR	Simula Planilha Orçamen	Orçamento	Cadastro
+AKS	Sldo Mens Cubos Gerenci	Orçamento	Saldos
+AKT	Mov.Diários Cub Gerenci	Orçamento	Saldos
+AKV	Cont Acesso Class Valor	Orçamento	Cadastro
+AKW	Entidades Do Cubo	Orçamento	Cadastro
+AKX	Cont De Acesso Por Cc	Orçamento	Cadastro
+AKY	Cont Acesso Item Contáb	Orçamento	Cadastro
+AKZ	Ações Para Bloqueio	Orçamento	Cadastro
+AL1	Cubos Gerenciais	Orçamento	Cadastro / Movimentos
+AL2	Tipos Saldos            Orçamento	Cadastro / Movimentos
+AL3	Configuração Do Cubo	Orçamento	Cadastro / Movimentos
+AL4	Config Cubos Detalhes	Orçamento	Cadastro / Movimentos
+AL5	Integ PCO X MSEXCEL	Orçamento	Cadastro
+AL6	Tabela Restrição Acesso	Orçamento	Cadastro
+AL7	Restrição User X Entid	Orçamento	Cadastro
+AL8	Cab Pré Config Cubo Ger	Orçamento	Cadastro
+AL9	ItensPré-Conf.Cubo Gere	Orçamento	Cadastro
+ALA	Fila Processamento PCO	Orçamento	Movimentos
+ALF	Prog Relat.Pré-Config	Orçamento	Cadastro
+ALG	Parâmet PréConfigurados	Orçamento	Cadastro
+ALH	Programa X Relatório	Orçamento	Cadastro
+ALI	Solicit De Contingência	Orçamento	Movimentos
+ALJ	ItensSolicitContingênci	Orçamento	Movimentos
+ALK	Liberadores Verbas PCO	Orçamento	Cadastro
+ALL	Limites Por Aprovador	Orçamento	Cadastro
+ALM	Grupos De Aprovação PCO	Orçamento	Cadastro
+ALN	ItensRegras Rec Relacio	Planejamento	Cadastro
+ALO	Hist De Distribuição	Planejamento	Cadastro
+ALP	Regras Movim Relacionad	Planejamento	Cadastro
+ALQ	Tipos De Movimentos	Planejamento	Cadastro
+ALR	CabeçRegrasRecRelaciona	Planejamento	Cadastro
+ALS	Cabec Regras Distribuiç	Planejamento	Cadastro
+ALT	Tipos De Despesas	Planejamento	Cadastro
+ALU	Dist De Vendas/Despesa	Planejamento	Cadastro
+ALV	Planilha Planejamento	Planejamento	Cadastro
+ALW	Revis Planil Planejamen	Planejamento	Cadastro
+ALX	Distrib.Do Planejamento	Planejamento	Cadastro
+ALY	Valores De Planejamento	Planejamento	Cadastro
+AM1	Tipos De Planejamento	Planejamento	Cadastro
+AM2	Estrut De Planejamento	Planejamento	Cadastro
+AM3	GruposVerbasPlanejament	Planejamento	Cadastro
+AM4	Movim Não Operacionais	Planejamento	Movimentos
+AM5	Movimentos Relacionados	Planejamento	Movimentos
+AM6	Relac.EntreGruposVerbas	Planejamento	Cadastro
+AM7	RoteiVerbas Salar Relac	Planejamento	Cadastro
+AM8	Relacionamento Partida	Planejamento	Cadastro
+AM9	Relacion Contra Partida	Planejamento	Cadastro
+AMA	CabecRoteiVerbasRelac.	Planejamento	Cadastro
+AMB	Config De Planejamento	Planejamento	Cadastro
+AMC	Estrut Tp.Planejamento	Planejamento	Cadastro
+AMD	VariaçãoTipoPlanejament	Planejamento	Cadastro
+AME	Hist De Planejamento	Planejamento	Cadastro
+AMF	Unidade Orçamentária	Geral		Cadastro
+AMG	Fases Planejamento Orça	Planejamento	Cadastro
+AMH	FasesXEventos		Planejamento	Cadastro
+AMI	EventosPlanejamentoOrc.	Planejamento	Cadastro
+AMJ	Área DE INTEG DO PCO	Orçamento	Movimentos
+AMK	Conf.Lançto Integração	Orçamento	Cadastro
+AMM	Projeto Do Planejamento	Planejamento	Cadastro
+AMO	Fase Orçamentária	Orçamento	Cadastro
+AMP	ProjPlane.XUnid.Orc.XCc	Planejamento	Cadastro
+AMQ	Eventos Planil Orçament	Orçamento	Cadastro
+AMR	FaseXEventos Orçament	Orçamento	Cadastro
+AMU	Controle Planejamento	Planejamento	Cadastro
+AMV	Limite Conta X Projeto	Orçamento	Cadastro
+AMW	CabecRegrasDistrib.Orc.	Orçamento	Cadastro
+AMX	Projeto Orçamentário	Orçamento	Cadastro
+AMY	Proj.Orc.XC.Orcam.XC.C.	Orçamento	Cadastro
+AMZ	ItensRegrasDistrib Orc.	Orçamento	Cadastro

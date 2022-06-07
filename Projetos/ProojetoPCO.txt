@@ -1,0 +1,98 @@
+Finalização das Especificações do PCO junto ao usuário chave Silas Castro em 02/06/2022
+
+Processos a serem implementados na TLP
+
+000002 - CONTAS A PAGAR - INCLUSAO DE TITULOS A PAGAR
+         Itens
+            01 - A PAGAR - INCLUSAO TITULOS                                                                         
+
+000021 - Contas a Pagar - Rateio
+         Itens
+            01 - CONTAS A PAGAR-RATEIO - INCLUSAO DE TITULOS A PAGAR-RATEIO                      
+000052 - Pedido de Compras
+        Itens
+            01 - PEDIDO DE COMPRAS - INCLUSAO DE PEDIDO DE COMPRAS - ITENS
+            09 - PEDIDO DE COMPRAS-PEDIDO DE COMPRAS-RATEIO POR CC                                                    
+000054 - NF de entrada
+        Itens
+            01 - Doc Entrada Itens
+            09   DOCUMENTO DE ENTRADA - INCLUSAO DE DOCUMENTO DE ENTRADA - RATEIO POR CC
+            15   DOCUMENTO DE ENTRADA - BAIXA DO PEDIDO DE COMPRAS - ITENS                                
+
+000101 - NOTA FISCAL DE SAIDA - INCLUSAO DE DOCUMENTO DE SAIDA - ITENS
+        Itens
+            01 - INCLUSAO DE DOCUMENTO DE SAIDA - ITENS
+            03 - NOTA FISCAL DE SAIDA - INCLUSAO DE RATEIOS DE DOCUMENTO DE SAIDA - ITENS
+
+000252 - Planilha Orçamentária Geradora do Budget
+        Itens
+            01
+000356 - Controle de Liberação de Contingência Orçamentária 
+        Itens 
+            01 LIBERACAO DE SOLICITACAO DE CONTINGENCIA
+            02 LIBERACAO DE SOLICITACAO DE CONTINGENCIA-Empenho
+
+Tipos de Saldos a serem implementados:
+
+OR  ==> Orçamento, vinculado ao Processo 000252
+RE  ==> Realizado, vinculado aos Processos 000054 (ítens 01, 09), 000002 (ítem 01), 000021(ítem 01)
+EM  ==> Empenho do PC pela emissão, vinculado ao Processo 000052 (ítens 01, 09)
+BX  ==> Baixa do PC pela Entrada de NF, vinculado ao Processo 000054 ( ítem 15)
+CT  ==> Solicitação de Contigência, vinculado ao Processo 000356 ( ítens 01, 02 )
+VD  ==> Vendas, vinculado ao Processo 000101 (ítens 01, 03)
+
+Estrutura da Planilha Orçamentária
+
+Nível 1  Conta Orçamentária
+Nível 2  Centro de Custo
+Nível 3  Tipo de Saldo
+
+Classe Orçamentária e Operação terão implementação padrão apenas para atender a estrutura do PCO.
+Poderão ser usadas futuramente para atender necessidades mais específicas.
+
+Exercício da Planilha  ==> Exercício Fiscal ( Jan a Dez )
+Período de Apuração da Planilha ==> Quinzenal
+A valorização da Apuração da Planilha levará em conta o Saldo Acumulado, isto é, eventual Saldo não consumido
+em determinado período será disponibilizado para o período subsequente.
+
+Cubos
+
+Todos os cubos terão a estrutura da Planilha Orçamentária já explicitada exceto aquele ligado ao Processo 000101
+que terá a estrutura
+
+Nível 1  Conta Orçamentária
+Nível 2 Tipo de Saldo
+
+caso não seja conveniente definir o Centro de Custo para cada linha da NF de saída.
+
+A Apuração de Saldos para avaliação de Bloqueios será:
+
+SaldoBloqueio = OR + BX - ( EM + RE )
+
+Quando SaldoBloqueio < 0 ocorrerá o Bloqueio e a possibilidade de Solicitação de Contingência.
+
+O Bloqueio só será aplicado ao Processo do Pedido de Compras.
+
+Para o cálculo de Pedidos de Compras em aberto teremos:
+
+SaldoPCsAbertos = EM - BX
+
+Contas Orçamentárias
+
+Sincronizadas com o Plano de Contas Contábil.
+Todos os produtos cadastrados são vinculados a uma conta contábil especifica, conforme a categoria do produto.
+Isto definirá, através de uma expressão AdvPl, a Conta Contábil a ser considerada na configuração do 
+Lançamento Orçamentário.
+No caso de eventual campo do Banco estiver vazio o Lançamento será desviado para uma conta de "Vala" 
+especificada no grupo 9 do Plano de Contas.
+No Reprocessamento de Lançamentos do exercício anterior para gerar um dataset para a Planilha Orçamentária
+do exercício atual, essas inconsistências serão checadas.
+Isto para evitar que o usuário veja surgir uma tela do PCO quando de uma inserção de Lançamento de algum Processo.
+
+
+Central de Atualizações
+
+
+
+
+

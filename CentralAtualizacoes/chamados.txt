@@ -1,0 +1,22 @@
+Pacote gerado na data (17/05/2022) e as issues contidas neste PTM foram homologadas até a data: (16/05/2022)
+DSERCTR1-36263   -    https://tdn.totvs.com/pages/releaseview.action?pageId=682441183
+DSERCTR1-35407   -    https://tdn.totvs.com/pages/releaseview.action?pageId=680247408
+DSERCTR1-36313   -    https://tdn.totvs.com/pages/releaseview.action?pageId=678579057
+DSERCTR1-36326   -    https://tdn.totvs.com/pages/releaseview.action?pageId=678580796
+DSERCTR1-35861   -    https://tdn.totvs.com/pages/releaseview.action?pageId=676577887
+DSERCTR1-35341   -    https://tdn.totvs.com/pages/releaseview.action?pageId=667366761
+DSERCTR1-35358   -    https://tdn.totvs.com/pages/releaseview.action?pageId=667355215
+DSERCTR1-35730   -    https://tdn.totvs.com/pages/releaseview.action?pageId=667362569
+DSERCTR1-35358   -    https://tdn.totvs.com/pages/releaseview.action?pageId=667355215
+DSERCTR1-35588   -    https://tdn.totvs.com/pages/releaseview.action?pageId=665275666
+DSERCTR1-35551   -    https://tdn.totvs.com/pages/releaseview.action?pageId=663821481
+DSERCTR1-35375   -    https://tdn.totvs.com/pages/releaseview.action?pageId=661867189
+DSERCTR1-35345   -    https://tdn.totvs.com/pages/releaseview.action?pageId=660547056
+DSERCTR1-35056   -    https://tdn.totvs.com/pages/releaseview.action?pageId=657551905
+DSERCTR1-35021   -    https://tdn.totvs.com/pages/releaseview.action?pageId=657224658
+DSERCTR1-34363   -    https://tdn.totvs.com/pages/releaseview.action?pageId=653163583
+DSERCTR1-34387   -    https://tdn.totvs.com/pages/releaseview.action?pageId=652583237
+DMANMAT02-35081   -    https://tdn.totvs.com/x/U-LbJg
+DSERCTR1-34579   -    https://tdn.totvs.com/pages/releaseview.action?pageId=651660779
+DSERCTR1-34223   -    https://tdn.totvs.com/pages/releaseview.action?pageId=645481330
+DSERCTR1-34034   -    https://tdn.totvs.com/pages/releaseview.action?pageId=644017377

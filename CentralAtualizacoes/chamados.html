@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Issues list</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    </head>
+
+    <body>
+        <div class="w3-top">
+            <div class="w3-bar w3-card w3-large w3-white">
+                <div class="w3-panel">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIMAAAAnCAYAAAAsEPueAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABZ0RVh0Q3JlYXRpb24gVGltZQAwOS8wMi8xND86n2AAAAAYdEVYdFNvZnR3YXJlAEFkb2JlIEZpcmV3b3Jrc0+zH04AABO2SURBVHic7Zx/sGRVde8/a/84p7vvr/nBDDPIjwEZmQH5YRC8MMTfEQTF5Pm8gCaaAnli5fnExKSsl2cilWfVK30+86OKitEEzQ/FrpiQyRBjaYwCwg0gRSCCQGQYkGGG+XFn7q/uPufsvd4fp/vOvd19h3vHGfxnvre6+p6999lr7X3WXmvttfZpUVWWi7M2vbPKuhNOag1WN02uGP6FIJw1kybDQWzNEltJ1H25c09Wh4YemhqqPci+fQf1j/9na9mEjuNlhSxHGDZted+GkCRvKYz8SjEy+KYs8bWGtcxUKkRrwXtwDowgzoF3aBEnSPw/4f0dpOn39RPv33MMx3McPwOWJAwbL/u1DSTuvSry0aKarg2pp5UkTCYJrcRDkoIx4Cw4hziLWg/egSoYW368e1Cs/XNtzn5V/9cNky/D+I5jGXhJYXjVL/7amIj8fpEmZ4dKQvCOVtoRhKTUBt5D4hFrUefAe0QM2FI4UEWdLwkCauQ7K4TPTHzsmm+/DGM8jiWinzC8CngDUf3b3nrjOU83Zj9sqqlk1ZRQKTXBZFKhlZaCIG1h0MSDCLh2mXVgDWpdqTWMKbUEgDG4LJu5fMO6z2179xt2ArONQu+oOpl6eYd/HPPRTxg+Mj09+4e3fOpWs+274+Qjg4RqhZg4GpWUg5UKmbMgpjQP1QqkCfikbSbaGsK6UjOIlN9w6BtAlRWifPyis/V3LzxzF7AF2P7yDPs4+sF1F+R5kd3yqVvNN755F2bFENF7ordkSULTOjJrWLNyBa89aR25woGi4OkiMomgQDC2NAkdQXAejJQ+w3wIHAiRTz/0pEwVmvyf121c/rbmOI4qFmiGk0U49TXv+eL+kN+glVTiQI0iTQhVz1SlwmS13DW8/qyNXHXmaURAnCOqMpEX7M5ynjGe5yeneTEoDVUKEVAptYaRUkCMBY0QtfxWGmZw6KPhmku++PObiuNYIAznnnL5taTutrhioFIMVMjTlFhNyJKEiWqFZqUC3vOuTWcyetoryESwxpB4i3MOZwwV78lE2BOV7TMtdjabbC+UPY0Wk3kABKwphQJKP0IVNO4hrb5Nr9vy8JIYr983CHLeEYzZAzt1bPSpnj6/Mm6pshnYCKwGBI0tkJ2I/KeOjT7TfY/96j216Ny57X7jMvnYTZr+mGbzVERO7rABGOBhHRtd1IeS+vjpwPr2pQFy4Ec6Njq9oN3t927GmNOAkwALKDFmiEwj8iKwH3hRx0b3zpmJ80698jRJ7We0llTUO4JzRO8IzjOTeFrtuAGJZ6iaYo3BGIN3pXNYiBCBLCrWO9anllOrKdatpImwY7bJs1OzPJYpL842eL5VlOM2Ug4/5Gso8s/J/RNv14tXZi89l+aXQP9uKbPeB3dLffwKHRudnTe5b6bK9cCVwMpDsznn+D4h9fGtwJ/q2OjTnepo7RuBO4+Qj8dotS4DPgr8ZlfdjcCXDnPvV4HRrrLLgB8AyO33XoQxH0LkncDaBa3mO/OwB/ix1Mc/ZgCuFUFC+G+qckpMPOoMAYgoLSs0vS+3jNZBtUKlUiHxhgFnqSYJiffUvCepVEi8w1qhpcoUwmRUjCqbBipcefJaPnL6Wm5+5XquP20tl64cKLeeHd/C2tfz5KPXLW0edXhp7fpiCKh1LqQ+/nFgK/A+5gvCXAMBOAv4bWCb1Mcvmlc3+DPwsQoYROTxPnWXSn28x6cDkL/+/inA2V3FPwX2Akh9/BKM2QbcgMja7vvLTqTz3xrgF0HONgCPnfL2jerkN6h4EAhiGKhWSAZqiHNkUeeCSqnzrByoMZSmjFQTBqspQ2lCLfEMeMeAt6S2/FSsIREhE2FK4UARyGPkhGrKW1YP8eHT1/KmlZ1nIoA4jNwo33ig94H0juZncTjn1LnUxz8AfBYYWOK9m4F/kPr4hrk+2n9HyIcFvgcUXXUXUApLL3xyIaVpmI+7gKfkz+6sALfRrQ1eGnkpeVauRsyIWiF6S24NF5y7iVVrVxOLwIQIz0UlV7BGOLGWMjRQwTpbxhSizklayzqKEBCgwJCLYFBiVAJQKORFYAZY4S2vHkz5/oFZoiqEANaOEsJlwD8ennfdATzDoQcbgcH2JByaKNUGIrspJ9tQPvRHgAmp378G+OQiBPYAU8A65mmRNtYDnwJ+XVSfVeHxNu2OeUuAU7ruicCO9rcAA8R4L1nzoK0NHwyxeBY4Y1778yTENcCLPZyJXESv8D6pY6NRbr/3Mkqfpxu7gCcphW8YSFAdQWQlYNE45Tad8Y4hnxfXSmIRI+QIFe9ZMTLMYK2Ks5ZX1KpcNFChknhqlZS3bN6AWsNMFmhEJeQ5mSqFliPN1JAhBIU8RrIAuQGNOjcTCrRCRMvBHVJbIVhU3ypbH96mV19wmNUf7wJztlE1KEQjAbgQ+CalGehM3N8DNwG5UbUKqEimY6OhrRVe2dXxDPBbttn8m1CpBFRPROTj7T7m749/Werjr7R5/m/B+wsFtSBRRRTVCxC5t6vfu4D/CswaVaOAhjzjwX/Nw2VXAdzDQmGwas1G4Ed9Bn9xexrnJgN4uD3eV7ev52uObQZujKWzCGBMUQiqlehcDfBG4wtO0uRVplW8Vn0ZSlYFX0mx1hFjJFhLUAUF5xwrB2usXTXEQFKGl4MqjTww02wxE5TpVkEWIweyQB6VXAUnkdkigoHQ1hCdEazwDiOlcim3nQZEfokY1wK7+0wEADp2qQKN+WVSH29Qytl8FMCMjo328/Sv6O4W+KyOjX5hXtkz8rUf/A7GnIHI2+eVDwBvLX719V/ow8dMH1odPpoLSt/3hs499wDv77rnfPnL792h73/job5vv3cAY9Z1tXuKGB8tG4iDHpv1eBgb3dWHpwYw0bkw6eTs+RhBvQEFVUUSD1ZA25YcwYqQOkvFGYpwaL6tCIOJ48ThAc5YOcjZa4d51eohzhypsb6WMmAtqTNUncGZsp8OpzEqqbWH7O2h7eZmms1uNbsUmD4T0dmqLSys3z9Er7O4G9Wt3W31ui2ziGzrKnaUdn0xPnpILlLeJqK9W2rV15IkycJe5Fx6/YEd1M7Y3ibSMUXzcb18/b4PS/3B6qL0ARNjfG1JuE0fxVuLtQYRwdjSfIDgRXDGzHNEe+GMYTj1bFg5wDlrhnj1qiGGvaPiDIkYxMiC+/vaAVWI8Yx+VUcPcT2l7ZyPF1Dd0be56vN9Sk87WtxI1O3AswsLZQvWDHeVXUAZA5mPx/XqdeVUhvBdYLqrfjUit0Lx91Ifv2oxHoxKj83EOTe3WlUVVcW219xyzsJ4azhxuMKJ1RRnDN4ITg4t38N2JXLi0ikdETy94fiAtd1efYefGXpX3GFX2nKgeWOKGO/uKl6JSveiuIiFvksD1Xs6F/G6LfuA/70ImcuButTH/0Hq46/rrjTGuxN6GOt+4lra+hhLuxGXualLrFAxZi6+tCSIrJK7+y/SowSlVx4Nqoup8gLm3J2jj1tvaSFyfy/V/DWdf6U+bunVRruI8cEFJY3GHwKfXoRSDbga+Eepj3/Zf/2+OVNpJI8jS+W3UMhCJCv6L57FUPUOZ4TUmbbP0M+sAzF2QtMQihr79x/R5v0Y4pgl03T8LoBHelaic6+Zd7WB3i3rbvbte2ZBXx94UwQ+SYzvAB6lP99rgA8UIt+T+vi5AEa9OVj20NteVYkxoihZjERVWkWk2VxCtHgeBEg5nFbQhfRVQcwsZ5577DKZ/R0fRQ4bzFpEio8SRLYj0p3G3yKfvq1DZzOlQHSgwA/1v1/d05WOjapee+md4C8CbqGMUPbDecBXpD6+2sSi2EtUJI8gIFExQIxxTp6iRooi0GhlNJtNdk3Olqt4GWinqBZHjG3NECEGiHGfntM3Gnt0UOTShyWlWHRgCb0+xvJU5EtjF9BtKk7j9DPLJJbqOW0+OmhSxi8WhY5d2NKx0VuI8c1AHeh3MPk1wAeNRH5S0gFCxBaBUITSoKoSi4I8D4SioCgCrSLy070H+OGOF9kz3aC5RJORA3lUtMtICILGcMg8zGUxw2KSfHSQtWZQ7Z6YFOJiYekV9ArP/n4NjxQ6NtqiN8hkxflNAIic1VU3CzywpL6vvfQpHRu9hjKW8WyfJtcZseYhAEGRogARms0moQjEGNsaQlGFvCiYbbaYmGnyxK69/HD7Czz63F5+sneSvVMNZrOC/uZJygBUiMQQiFIKmlElDwUaQqkNQoAQoSiUVvPpPh0dPVQGn0dkoqv0DKztTgB10B3iVfpP6s+KR7uuKwq/IH/1/YQyWTYfO1nm6TAdG62j2s+5PNXFofQemW5l0oqJ+oizESkCIc+J3iFRiCFQ5AUtI6iYdggZ9irM5AX7pmao1ipUfRmuHkwsA84wVEmoeIfEAkLAGUFiIMS2MBhhIu8IQ9tMxADOP8jQyDHVDHrN63Kpjz/LwjTwAKrXA9+d37adlPpQVxctYPxo8yXwI4WfcChMboDzSZK1wDldze/Wse4s9lKI9CwCgMyFVvaMi/od4EopAsZbQpajGhERNCqhCGRkYARtH2dToKHQKAIt70iLiE08aSsnMYIRwQgMV1Ien5jhvokZRrxhjTWk1uFEqFjDwUYLLfLSNIS2mchmv80H3nxUVXBfqH4DkXdR+redibpG6uNVVL9EGao9H5GP0O3Fq04R41E/3W1ge4DHWJgz2Qy8q51Y6pQFVLvzH+UQ6uPvBk5C9QWUSYyZBG1Sum6bgD/oc9u/u8ee/mbznHPevdUdmLkSVUxUWpNTNJstBgcH6JhJRYlFpMjy9jVYDJmPZEXABqgUkUqjSeIc4h2qymwz53u7D/DnO/ejCIlGNiSOEwerjIjw6IEptGj7DDGAkgn6L8tzT48Q115a5+v3fYyF2sEB/wWRX54bZn98Vq/bcvBos1SUCbRu1X8+In/SVabAg/THHwCbEdHyaOqCrWK/kD3E+EUHIIVsE9UXaMb1miguK9j5xHastYysGMELOFuemNIQKVoZCqSqhOjJncVGJQuehnWYLCO1BUGEopqys5UTsxZQHnp5otHkiYnJ0mHsnHZShTwH57+lb39nX4lfAvoFkhZvrIp8/b4PIbKV3mDO4nkE+CeMufUIeFsqvg38j3nX/TZijyWTk4v5VZ3gWL8dUz98zRiz1QD8xxN/+3xM3f+VqEgzxwTl+ae2c//d9/PA/Q/z5E92sG//QfJWi4oRqs6RaqQoClqtFnmW02rlNGcbzDQbzDRbHGi2mGw0aUzPMtVoQTODZhNaLQjFoZ1DDJBl0GphY2wMNGf+QjfQfCnu+0NSevMNhz2JpNdc8oiBa4H7lkjkNprN9+p7XtcvM9lBvz1xeaZyafgW8FeHqVdUf7d14+X5IvXpIuX98GXgpjA2ms0xrb7yFZrTHzS5btYQSJynNTnN87MNfrp7D4MrhklXr2DF6lWsXbOKk9eewAnVCoPtGHOukbwAYsQ5RywUay1Na5hqNssH3r042vZP2ttTiWHb9G+/945lDGQhVF9A2Ep5Qkjbk3I3LxFGDmOj41J/4B0Q3gO8iTIQs54yfzEFPEe5//9nHRvtzl72wy7Kc5ErKPMZDvgXtO8ev3cYY6O53H7vzRjzHKpvQ2QjZXxhAngIuE2vueRwfHwM1asQOZPS11nFocMwk5SHgh4CvqNjo3PzveB09PknX/ErWZZ/zVZ9KiM1YuqJqadVqZBZoZV4mtUUrdVIh4cYGahx0qqVnDwyxKmDNVYOVEmSBBVpf6Aiwv976jl2TDcQu1DzajvJIUWOhrATjaP6yRueW8qELQapj4+Y8iESy4cw0d6/L/X+hFIQhin9hSZwQPufBzhcP4OmTGQpYGLOhL5vdLGVvHg/t9+7HmNOoBzLLNjndeyi7qxk/3u/9oMRrF1BmY/oaIsmMe7Xay/tOUG1QBguPuMKGTpp3R+9uGPXR0JqMUMVYuIpainBJxSpp0gcs84z6SzRe0gSXJJQHaiycmiIU2o1Tq4lDA0OsX54EIvyxz/ezv5GC/G92lPzAiNMr66kN7z4O79aX+5kHcfRw4Knc//T/6xR9cefu+ULfPXLW8mmm5hBwVqLaNs7E2GgfbZh1kRmioIiRqZCYGp6lmedw3iHOEc1Sahay8FQamkNXQsjRtYlnt9/yyg3bTm3N2N3HC8repdq1D03f+qmR3bt3KN33vGv53tr23uRtkoHYhGwMWI04mKkaU1pDJMEiqKMWhYF01nGtJjyfYseOhGjOvWbb7j46Zu2nLuPMmJ9HD9H9Lx4+xvXfMJ9/vM3S3LSunDBaVfeHI38HokZidWUWPGEakJhHTEp38EMzpElnlnnaHlHRMof7ui8D2Ft51xjSUC1PFIX9D+HV6/6rYO/98FtLHNLeBzHBi/5+wznbbjqjSr6Cby9XAfS0qn0jugshfeEtHzpJlpL7jwta2g6R+4skfY7lmIo09Rtoj75C61WPqOfvfmJYz/E41gqlvTLLWduuHqwptm71JoPa62yhcQSqwlF4im8R60t38JyFrWGYE35/oQY1AhRIIqA8reFmC/nX/n0kb6OdhzHEMv6Tafz3CWri3NecYmbza5QZ64MI9XTY1sAoi1NhlpL9AY1BlGYrVUeCN7f6Rutb609MPnIo9/+0uxLUzqOnweWJQwdXCgXu/yU1UP5CUNnJRPTG7M1wxtjNRlGCWqMRmt2m6x4Gu+eOrBm1fbs8ndPHbj+kmPA/nEcTfx/UglI55ES868AAAAASUVORK5CYII=" />
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-panel">&nbsp;</div>
+        <div class="w3-panel">&nbsp;</div>
+
+
+
+        <div class="app-toggle w3-panel">
+            <div class="w3-card-4 w3-panel">
+                <div class="w3-panel">
+                    <div class="w3-large">DT MELHORIA - Lentidão rotina apuração de resultados</div>
+                    <div><a href="https://tdn.totvs.com/pages/releaseview.action?pageId=682441183" target="_blank">https://tdn.totvs.com/pages/releaseview.action?pageId=682441183</a></div>
+                </div>
+                <div class="w3-panel app-hide">
+                    <table class="relative-table wrapped confluenceTable w3-table-all" style="width: 32.6575%;"><colgroup><col style="width: 35.5556%;"/><col style="width: 64.4444%;"/></colgroup><tbody><tr><th colspan="1" class="confluenceTh">Produto:</th><td colspan="1" class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="solucoes_totvs_cross">TOTVS Backoffice</font></p></div></td></tr><tr><th class="confluenceTh">Linha de Produto:</th><td class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="linhas_totvs">Linha Protheus</font></p></div></td></tr><tr><th class="confluenceTh">Segmento:</th><td class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="segmentos_totvs">Serviços</font></p></div></td></tr><tr><th class="confluenceTh">Módulo:</th><td class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="modulos_cross_segmentos">TOTVS Backoffice (Linha Protheus) - Contabilidade Gerencial (SIGACTB)</font></p></div></td></tr><tr><th class="confluenceTh">Função:</th><td class="confluenceTd">Apuração de Resultados (CTBA211)</td></tr><tr><th colspan="1" class="confluenceTh">País:</th><td colspan="1" class="confluenceTd">Brasil</td></tr><tr><th colspan="1" class="confluenceTh">Ticket:</th><td colspan="1" class="confluenceTd">Interno</td></tr><tr><th colspan="1" class="confluenceTh"><span style="color: rgb(0,0,0);">Requisito/S</span><span style="color: rgb(0,0,0);">tory/Issue</span><span style="color: rgb(47,57,65);">:</span></th><td colspan="1" class="confluenceTd">DSERCTR1-36263</td></tr></tbody></table>
+                </div>
+				<div class="w3-panel w3-left-align">Países: BRASIL</div>
+                <div class="w3-panel w3-right-align">cerca de 5 horas atrás</div>
+			</div>
+		</div>
+
+
+
+        <div class="app-toggle w3-panel">
+            <div class="w3-card-4 w3-panel">
+                <div class="w3-panel">
+                    <div class="w3-large">DT PERFORMANCE - PCO - DRE Gerencial no Sistema</div>
+                    <div><a href="https://tdn.totvs.com/pages/releaseview.action?pageId=680247408" target="_blank">https://tdn.totvs.com/pages/releaseview.action?pageId=680247408</a></div>
+                </div>
+                <div class="w3-panel app-hide">
+                    <table class="relative-table wrapped confluenceTable w3-table-all" style="width: 32.6575%;"><colgroup><col style="width: 35.5556%;"/><col style="width: 64.4444%;"/></colgroup><tbody><tr><th colspan="1" class="confluenceTh">Produto:</th><td colspan="1" class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="solucoes_totvs_cross">TOTVS Backoffice</font></p></div></td></tr><tr><th class="confluenceTh">Linha de Produto:</th><td class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="linhas_totvs">Linha Protheus</font></p></div></td></tr><tr><th class="confluenceTh">Segmento:</th><td class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="segmentos_totvs">Serviços</font></p></div></td></tr><tr><th class="confluenceTh">Módulo:</th><td class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="modulos_cross_segmentos">TOTVS Backoffice (Linha Protheus) - Planejamento e Controle Orçamentário (SIGAPCO)</font></p></div></td></tr><tr><th class="confluenceTh">Função:</th><td class="confluenceTd">Consulta de Visões - Saldos por Período (PCOC361)<span style="color: rgb(23,43,77);"> </span></td></tr><tr><th colspan="1" class="confluenceTh">País:</th><td colspan="1" class="confluenceTd">Brasil</td></tr><tr><th colspan="1" class="confluenceTh">Ticket:</th><td colspan="1" class="confluenceTd">Interno</td></tr><tr><th colspan="1" class="confluenceTh"><span style="color: rgb(0,0,0);">Requisito/S</span><span style="color: rgb(0,0,0);">tory/Issue</span><span style="color: rgb(47,57,65);"> :</span></th><td colspan="1" class="confluenceTd">DSERCTR1-35407</td></tr></tbody></table>
+                </div>
+				<div class="w3-panel w3-left-align">Países: BRASIL</div>
+                <div class="w3-panel w3-right-align">08 abr, 2022</div>
+			</div>
+		</div>
+
+
+
+        <div class="app-toggle w3-panel">
+            <div class="w3-card-4 w3-panel">
+                <div class="w3-panel">
+                    <div class="w3-large">13778819 DSERCTR1-36313 DT Mensagem não existe aprovador cadastrado ao cancelar envio de email</div>
+                    <div><a href="https://tdn.totvs.com/pages/releaseview.action?pageId=678579057" target="_blank">https://tdn.totvs.com/pages/releaseview.action?pageId=678579057</a></div>
+                </div>
+                <div class="w3-panel app-hide">
+                    <table class="relative-table wrapped confluenceTable w3-table-all" style="width: 32.6575%;"><colgroup><col style="width: 35.5556%;" /><col style="width: 64.4444%;" /></colgroup><tbody><tr><th colspan="1" class="confluenceTh">Produto:</th><td colspan="1" class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="solucoes_totvs_cross">TOTVS Backoffice</font></p></div></td></tr><tr><th class="confluenceTh">Linha de Produto:</th><td class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="linhas_totvs">Linha Protheus</font></p></div></td></tr><tr><th class="confluenceTh">Segmento:</th><td class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="segmentos_totvs">Serviços</font></p></div></td></tr><tr><th class="confluenceTh">Módulo:</th><td class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="modulos_cross_segmentos">TOTVS Backoffice (Linha Protheus) - Planejamento e Controle Orçamentário (SIGAPCO)</font></p></div></td></tr><tr><th class="confluenceTh">Função:</th><td class="confluenceTd">Contingências (PCOA530)</td></tr><tr><th colspan="1" class="confluenceTh">País:</th><td colspan="1" class="confluenceTd">Brasil</td></tr><tr><th colspan="1" class="confluenceTh">Ticket:</th><td colspan="1" class="confluenceTd">13778819</td></tr><tr><th colspan="1" class="confluenceTh"><span style="color: rgb(0,0,0);">Requisito/S</span><span style="color: rgb(0,0,0);">tory/Issue</span><span style="color: rgb(47,57,65);">:</span></th><td colspan="1" class="confluenceTd">DSERCTR1-36313</td></tr></tbody></table>
+                </div>
+				<div class="w3-panel w3-left-align">Países: BRASIL</div>
+                <div class="w3-panel w3-right-align">cerca de uma hora atrás</div>
+			</div>
+		</div>
+
+
+
+        <div class="app-toggle w3-panel">
+            <div class="w3-card-4 w3-panel">
+                <div class="w3-panel">
+                    <div class="w3-large">13708643 DSERCTR1-36326 DT Importação dados integração XML PCO (PCOA106)</div>
+                    <div><a href="https://tdn.totvs.com/pages/releaseview.action?pageId=678580796" target="_blank">https://tdn.totvs.com/pages/releaseview.action?pageId=678580796</a></div>
+                </div>
+                <div class="w3-panel app-hide">
+                    <table class="relative-table wrapped confluenceTable w3-table-all" style="width: 32.6575%;"><colgroup><col style="width: 35.5556%;" /><col style="width: 64.4444%;" /></colgroup><tbody><tr><th colspan="1" class="confluenceTh">Produto:</th><td colspan="1" class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="solucoes_totvs_cross">TOTVS Backoffice</font></p></div></td></tr><tr><th class="confluenceTh">Linha de Produto:</th><td class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="linhas_totvs">Linha Protheus</font></p></div></td></tr><tr><th class="confluenceTh">Segmento:</th><td class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="segmentos_totvs">Serviços</font></p></div></td></tr><tr><th class="confluenceTh">Módulo:</th><td class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="modulos_cross_segmentos">TOTVS Backoffice (Linha Protheus) - Planejamento e Controle Orçamentário (SIGAPCO)</font></p></div></td></tr><tr><th class="confluenceTh">Função:</th><td class="confluenceTd">Orçamentos / Ferramentas / Importação Integração (PCOA106)</td></tr><tr><th colspan="1" class="confluenceTh">País:</th><td colspan="1" class="confluenceTd">Brasil</td></tr><tr><th colspan="1" class="confluenceTh">Ticket:</th><td colspan="1" class="confluenceTd">13708643</td></tr><tr><th colspan="1" class="confluenceTh"><span style="color: rgb(0,0,0);">Requisito/S</span><span style="color: rgb(0,0,0);">tory/Issue</span><span style="color: rgb(47,57,65);">:</span></th><td colspan="1" class="confluenceTd">DSERCTR1-36326</td></tr></tbody></table>
+                </div>
+				<div class="w3-panel w3-left-align">Países: BRASIL</div>
+                <div class="w3-panel w3-right-align">30 mar, 2022</div>
+			</div>
+		</div>
+
+
+
+        <div class="app-toggle w3-panel">
+            <div class="w3-card-4 w3-panel">
+                <div class="w3-panel">
+                    <div class="w3-large">13495254 DSERCTR1-35861 DT Cubo não encontra entidade 06</div>
+                    <div><a href="https://tdn.totvs.com/pages/releaseview.action?pageId=676577887" target="_blank">https://tdn.totvs.com/pages/releaseview.action?pageId=676577887</a></div>
+                </div>
+                <div class="w3-panel app-hide">
+                    <table class="relative-table wrapped confluenceTable w3-table-all" style="width: 32.6575%;"><colgroup><col style="width: 35.5556%;"/><col style="width: 64.4444%;"/></colgroup><tbody><tr><th colspan="1" class="confluenceTh">Produto:</th><td colspan="1" class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="solucoes_totvs_cross">TOTVS Backoffice</font></p></div></td></tr><tr><th class="confluenceTh">Linha de Produto:</th><td class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="linhas_totvs">Linha Protheus</font></p></div></td></tr><tr><th class="confluenceTh">Segmento:</th><td class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="segmentos_totvs">Serviços</font></p></div></td></tr><tr><th class="confluenceTh">Módulo:</th><td class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="modulos_cross_segmentos">TOTVS Backoffice (Linha Protheus) - Planejamento e Controle Orçamentário (SIGAPCO)</font></p></div></td></tr><tr><th class="confluenceTh">Função:</th><td class="confluenceTd">Saldos Por Períodos (PCOC341)</td></tr><tr><th colspan="1" class="confluenceTh">País:</th><td colspan="1" class="confluenceTd">Brasil</td></tr><tr><th colspan="1" class="confluenceTh">Ticket:</th><td colspan="1" class="confluenceTd">13495254</td></tr><tr><th colspan="1" class="confluenceTh"><span style="color: rgb(0,0,0);">Requisito/S</span><span style="color: rgb(0,0,0);">tory/Issue</span><span style="color: rgb(47,57,65);">:</span></th><td colspan="1" class="confluenceTd">DSERCTR1-35861</td></tr></tbody></table>
+                </div>
+				<div class="w3-panel w3-left-align">Países: BRASIL</div>
+                <div class="w3-panel w3-right-align">22 mar, 2022</div>
+			</div>
+		</div>
+
+
+
+        <div class="app-toggle w3-panel">
+            <div class="w3-card-4 w3-panel">
+                <div class="w3-panel">
+                    <div class="w3-large">13221083 DSERCTR1-35341 DT Relatório totalizadores por planilha ocorre não conformidade ao personalizar</div>
+                    <div><a href="https://tdn.totvs.com/pages/releaseview.action?pageId=667366761" target="_blank">https://tdn.totvs.com/pages/releaseview.action?pageId=667366761</a></div>
+                </div>
+                <div class="w3-panel app-hide">
+                    <table class="relative-table wrapped confluenceTable w3-table-all" style="width: 32.6575%;"><colgroup><col style="width: 35.5556%;"/><col style="width: 64.4444%;"/></colgroup><tbody><tr><th colspan="1" class="confluenceTh">Produto:</th><td colspan="1" class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="solucoes_totvs_cross">TOTVS Backoffice</font></p></div></td></tr><tr><th class="confluenceTh">Linha de Produto:</th><td class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="linhas_totvs">Linha Protheus</font></p></div></td></tr><tr><th class="confluenceTh">Segmento:</th><td class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="segmentos_totvs">Backoffice</font></p></div></td></tr><tr><th class="confluenceTh">Módulo:</th><td class="confluenceTd">Planejamento e Controle Orçamentário- SIGAPCO.</td></tr><tr><th class="confluenceTh">Função:</th><td class="confluenceTd">Relatorio totalizadores por planilha (PCOR050)</td></tr><tr><th colspan="1" class="confluenceTh">País:</th><td colspan="1" class="confluenceTd">Brasil</td></tr><tr><th colspan="1" class="confluenceTh">Ticket:</th><td colspan="1" class="confluenceTd">13221083</td></tr><tr><th colspan="1" class="confluenceTh"><span style="color: rgb(0,0,0);">Requisito/S</span><span style="color: rgb(0,0,0);">tory/Issue</span><span style="color: rgb(47,57,65);">:</span></th><td colspan="1" class="confluenceTd">DSERCTR1-35341</td></tr></tbody></table>
+                </div>
+				<div class="w3-panel w3-left-align">Países: BRASIL</div>
+                <div class="w3-panel w3-right-align">17 fev, 2022</div>
+			</div>
+		</div>
+
+
+
+        <div class="app-toggle w3-panel">
+            <div class="w3-card-4 w3-panel">
+                <div class="w3-panel">
+                    <div class="w3-large">12858023 DSERCTR1-35358 DT Não filtra por operação planilha detalhada</div>
+                    <div><a href="https://tdn.totvs.com/pages/releaseview.action?pageId=667355215" target="_blank">https://tdn.totvs.com/pages/releaseview.action?pageId=667355215</a></div>
+                </div>
+                <div class="w3-panel app-hide">
+                    <table class="relative-table wrapped confluenceTable w3-table-all" style="width: 32.6575%;"><colgroup><col style="width: 35.5556%;"/><col style="width: 64.4444%;"/></colgroup><tbody><tr><th colspan="1" class="confluenceTh">Produto:</th><td colspan="1" class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="solucoes_totvs_cross">TOTVS Backoffice</font></p></div></td></tr><tr><th class="confluenceTh">Linha de Produto:</th><td class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="linhas_totvs">Linha Protheus</font></p></div></td></tr><tr><th class="confluenceTh">Segmento:</th><td class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="segmentos_totvs">Backoffice</font></p></div></td></tr><tr><th class="confluenceTh">Módulo:</th><td class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="modulos_cross_segmentos">TOTVS Backoffice (Linha Protheus) - Planejamento e Controle Orçamentário (SIGAPCO)</font></p></div></td></tr><tr><th class="confluenceTh">Função:</th><td class="confluenceTd"><span style="color: rgb(23,43,77);">PCOR045 - Planilha Detalhada</span></td></tr><tr><th colspan="1" class="confluenceTh">País:</th><td colspan="1" class="confluenceTd">Brasil</td></tr><tr><th colspan="1" class="confluenceTh">Ticket:</th><td colspan="1" class="confluenceTd">12858023</td></tr><tr><th colspan="1" class="confluenceTh"><span style="color: rgb(0,0,0);">Requisito/S</span><span style="color: rgb(0,0,0);">tory/Issue:</span></th><td colspan="1" class="confluenceTd">DSERCTR1-35358</td></tr></tbody></table>
+                </div>
+				<div class="w3-panel w3-left-align">Países: BRASIL</div>
+                <div class="w3-panel w3-right-align">15 fev, 2022</div>
+			</div>
+		</div>
+
+
+
+        <div class="app-toggle w3-panel">
+            <div class="w3-card-4 w3-panel">
+                <div class="w3-panel">
+                    <div class="w3-large">13451084 DSERCTR1-35730 DT Usuários grupo administrador não visualizam contingências</div>
+                    <div><a href="https://tdn.totvs.com/pages/releaseview.action?pageId=667362569" target="_blank">https://tdn.totvs.com/pages/releaseview.action?pageId=667362569</a></div>
+                </div>
+                <div class="w3-panel app-hide">
+                    <table class="relative-table wrapped confluenceTable w3-table-all" style="width: 32.6575%;"><colgroup><col style="width: 35.5556%;"/><col style="width: 64.4444%;"/></colgroup><tbody><tr><th colspan="1" class="confluenceTh">Produto:</th><td colspan="1" class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="solucoes_totvs_cross">TOTVS Backoffice</font></p></div></td></tr><tr><th class="confluenceTh">Linha de Produto:</th><td class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="linhas_totvs">Linha Protheus</font></p></div></td></tr><tr><th class="confluenceTh">Segmento:</th><td class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="segmentos_totvs">Backoffice</font></p></div></td></tr><tr><th class="confluenceTh">Módulo:</th><td class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="modulos_cross_segmentos">TOTVS Backoffice (Linha Protheus) - Planejamento e Controle Orçamentário (SIGAPCO)</font></p></div></td></tr><tr><th class="confluenceTh">Função:</th><td class="confluenceTd">PCOA500 - Manutenção de Contingência</td></tr><tr><th colspan="1" class="confluenceTh">País:</th><td colspan="1" class="confluenceTd">Brasil</td></tr><tr><th colspan="1" class="confluenceTh">Ticket:</th><td colspan="1" class="confluenceTd">13451084</td></tr><tr><th colspan="1" class="confluenceTh"><p><span style="color: rgb(0,0,0);">Requisito/S</span><span style="color: rgb(0,0,0);">tory/Issue</span><span style="color: rgb(47,57,65);">:</span></p></th><td colspan="1" class="confluenceTd">DSERCTR1-35730</td></tr></tbody></table>
+                </div>
+				<div class="w3-panel w3-left-align">Países: BRASIL</div>
+                <div class="w3-panel w3-right-align">ontem às 6:19 PM</div>
+			</div>
+		</div>
+
+
+
+        <div class="app-toggle w3-panel">
+            <div class="w3-card-4 w3-panel">
+                <div class="w3-panel">
+                    <div class="w3-large">12858023 DSERCTR1-35358 DT Não filtra por operação planilha detalhada</div>
+                    <div><a href="https://tdn.totvs.com/pages/releaseview.action?pageId=667355215" target="_blank">https://tdn.totvs.com/pages/releaseview.action?pageId=667355215</a></div>
+                </div>
+                <div class="w3-panel app-hide">
+                    <table class="relative-table wrapped confluenceTable w3-table-all" style="width: 32.6575%;"><colgroup><col style="width: 35.5556%;"/><col style="width: 64.4444%;"/></colgroup><tbody><tr><th colspan="1" class="confluenceTh">Produto:</th><td colspan="1" class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="solucoes_totvs_cross">TOTVS Backoffice</font></p></div></td></tr><tr><th class="confluenceTh">Linha de Produto:</th><td class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="linhas_totvs">Linha Protheus</font></p></div></td></tr><tr><th class="confluenceTh">Segmento:</th><td class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="segmentos_totvs">Backoffice</font></p></div></td></tr><tr><th class="confluenceTh">Módulo:</th><td class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="modulos_cross_segmentos">TOTVS Backoffice (Linha Protheus) - Planejamento e Controle Orçamentário (SIGAPCO)</font></p></div></td></tr><tr><th class="confluenceTh">Função:</th><td class="confluenceTd"><span style="color: rgb(23,43,77);">PCOR045 - Planilha Detalhada</span></td></tr><tr><th colspan="1" class="confluenceTh">País:</th><td colspan="1" class="confluenceTd">Brasil</td></tr><tr><th colspan="1" class="confluenceTh">Ticket:</th><td colspan="1" class="confluenceTd">12858023</td></tr><tr><th colspan="1" class="confluenceTh"><span style="color: rgb(0,0,0);">Requisito/S</span><span style="color: rgb(0,0,0);">tory/Issue:</span></th><td colspan="1" class="confluenceTd">DSERCTR1-35358</td></tr></tbody></table>
+                </div>
+				<div class="w3-panel w3-left-align">Países: BRASIL</div>
+                <div class="w3-panel w3-right-align">15 fev, 2022</div>
+			</div>
+		</div>
+
+
+
+        <div class="app-toggle w3-panel">
+            <div class="w3-card-4 w3-panel">
+                <div class="w3-panel">
+                    <div class="w3-large">DT DRE Gerencial no Sistema</div>
+                    <div><a href="https://tdn.totvs.com/pages/releaseview.action?pageId=665275666" target="_blank">https://tdn.totvs.com/pages/releaseview.action?pageId=665275666</a></div>
+                </div>
+                <div class="w3-panel app-hide">
+                    <table class="relative-table wrapped confluenceTable w3-table-all" style="width: 32.6575%;"><colgroup><col style="width: 35.5556%;"/><col style="width: 64.4444%;"/></colgroup><tbody><tr><th colspan="1" class="confluenceTh">Produto:</th><td colspan="1" class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="solucoes_totvs_cross">TOTVS Backoffice</font></p></div></td></tr><tr><th class="confluenceTh">Linha de Produto:</th><td class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="linhas_totvs">Linha Protheus</font></p></div></td></tr><tr><th class="confluenceTh">Segmento:</th><td class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="segmentos_totvs">Serviços</font></p></div></td></tr><tr><th class="confluenceTh">Módulo:</th><td class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="modulos_cross_segmentos">TOTVS Backoffice (Linha Protheus) - Planejamento e Controle Orçamentário (SIGAPCO)</font></p></div></td></tr><tr><th class="confluenceTh">Função:</th><td class="confluenceTd"><span style="color: rgb(23,43,77);">Processamento Cubos com Visões (PCOCUBEVIS)</span></td></tr><tr><th colspan="1" class="confluenceTh">País:</th><td colspan="1" class="confluenceTd">Brasil</td></tr><tr><th colspan="1" class="confluenceTh">Ticket:</th><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">11428565</span></td></tr><tr><th colspan="1" class="confluenceTh"><span style="color: rgb(0,0,0);">Issue</span><span style="color: rgb(47,57,65);">:</span></th><td colspan="1" class="confluenceTd">DSERCTR1-35588</td></tr></tbody></table>
+                </div>
+				<div class="w3-panel w3-left-align">Países: BRASIL</div>
+                <div class="w3-panel w3-right-align">2 minutos atrás</div>
+			</div>
+		</div>
+
+
+
+        <div class="app-toggle w3-panel">
+            <div class="w3-card-4 w3-panel">
+                <div class="w3-panel">
+                    <div class="w3-large">DT PCOXSLD - Ajuste de procedures com novo modelo utilizando Ponto de entrada</div>
+                    <div><a href="https://tdn.totvs.com/pages/releaseview.action?pageId=663821481" target="_blank">https://tdn.totvs.com/pages/releaseview.action?pageId=663821481</a></div>
+                </div>
+                <div class="w3-panel app-hide">
+                    <table class="relative-table wrapped confluenceTable w3-table-all" style="width: 32.6575%;"><colgroup><col style="width: 35.5556%;"/><col style="width: 64.4444%;"/></colgroup><tbody><tr><th colspan="1" class="confluenceTh">Produto:</th><td colspan="1" class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="solucoes_totvs_cross">TOTVS Backoffice</font></p></div></td></tr><tr><th class="confluenceTh">Linha de Produto:</th><td class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="linhas_totvs">Linha Protheus</font></p></div></td></tr><tr><th class="confluenceTh">Segmento:</th><td class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="segmentos_totvs">Serviços</font></p></div></td></tr><tr><th class="confluenceTh">Módulo:</th><td class="confluenceTd">Planejamento e Controle Orçamentário (SIGAPCO) </td></tr><tr><th class="confluenceTh">Função:</th><td class="confluenceTd">PCOXSLD.PRW</td></tr><tr><th colspan="1" class="confluenceTh">País:</th><td colspan="1" class="confluenceTd">Brasil</td></tr><tr><th colspan="1" class="confluenceTh">Ticket:</th><td colspan="1" class="confluenceTd">Interno</td></tr><tr><th colspan="1" class="confluenceTh"><span style="color: rgb(0,0,0);">Issue</span><span style="color: rgb(47,57,65);">:</span></th><td colspan="1" class="confluenceTd">DSERCTR1-35551</td></tr></tbody></table>
+                </div>
+				<div class="w3-panel w3-left-align">Países: BRASIL</div>
+                <div class="w3-panel w3-right-align">03 fev, 2022</div>
+			</div>
+		</div>
+
+
+
+        <div class="app-toggle w3-panel">
+            <div class="w3-card-4 w3-panel">
+                <div class="w3-panel">
+                    <div class="w3-large">13145587 DSERCTR1-35375 DT Rotina GPEM670 não está bloqueando a integração</div>
+                    <div><a href="https://tdn.totvs.com/pages/releaseview.action?pageId=661867189" target="_blank">https://tdn.totvs.com/pages/releaseview.action?pageId=661867189</a></div>
+                </div>
+                <div class="w3-panel app-hide">
+                    <table class="relative-table wrapped confluenceTable w3-table-all" style="width: 32.6575%;"><colgroup><col style="width: 35.5556%;"/><col style="width: 64.4444%;"/></colgroup><tbody><tr><th colspan="1" class="confluenceTh">Produto:</th><td colspan="1" class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="solucoes_totvs_cross">TOTVS Backoffice</font></p></div></td></tr><tr><th class="confluenceTh">Linha de Produto:</th><td class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="linhas_totvs">Linha Protheus</font></p></div></td></tr><tr><th class="confluenceTh">Segmento:</th><td class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="segmentos_totvs">Serviços</font></p></div></td></tr><tr><th class="confluenceTh">Módulo:</th><td class="confluenceTd">Planejamento e Controle Orçamentário (SIGAPCO)</td></tr><tr><th class="confluenceTh">Função:</th><td class="confluenceTd">PCOXINT</td></tr><tr><th colspan="1" class="confluenceTh">País:</th><td colspan="1" class="confluenceTd">Brasil</td></tr><tr><th colspan="1" class="confluenceTh">Ticket:</th><td colspan="1" class="confluenceTd">13145587</td></tr><tr><th colspan="1" class="confluenceTh"><span style="color: rgb(0,0,0);">Requisito/S</span><span style="color: rgb(0,0,0);">tory/Issue</span><span style="color: rgb(47,57,65);"> :</span></th><td colspan="1" class="confluenceTd">DSERCTR1-35375</td></tr></tbody></table>
+                </div>
+				<div class="w3-panel w3-left-align">Países: BRASIL</div>
+                <div class="w3-panel w3-right-align">cerca de 2 horas atrás</div>
+			</div>
+		</div>
+
+
+
+        <div class="app-toggle w3-panel">
+            <div class="w3-card-4 w3-panel">
+                <div class="w3-panel">
+                    <div class="w3-large">11428565 DSERCTR1-35345 DT DRE Gerencial no Sistema</div>
+                    <div><a href="https://tdn.totvs.com/pages/releaseview.action?pageId=660547056" target="_blank">https://tdn.totvs.com/pages/releaseview.action?pageId=660547056</a></div>
+                </div>
+                <div class="w3-panel app-hide">
+                    <table class="relative-table wrapped confluenceTable w3-table-all" style="width: 32.6575%;"><colgroup><col style="width: 35.5556%;"/><col style="width: 64.4444%;"/></colgroup><tbody><tr><th colspan="1" class="confluenceTh">Produto:</th><td colspan="1" class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="solucoes_totvs_cross">TOTVS Backoffice</font></p></div></td></tr><tr><th class="confluenceTh">Linha de Produto:</th><td class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="linhas_totvs">Linha Protheus</font></p></div></td></tr><tr><th class="confluenceTh">Segmento:</th><td class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="segmentos_totvs">Serviços</font></p></div></td></tr><tr><th class="confluenceTh">Módulo:</th><td class="confluenceTd">Planejamento Controle Orçamentário (SIGAPCO)</td></tr><tr><th class="confluenceTh">Função:</th><td class="confluenceTd">Processamento Cubos com Visões (PCOCUBEVIS)</td></tr><tr><th colspan="1" class="confluenceTh">País:</th><td colspan="1" class="confluenceTd">Brasil</td></tr><tr><th colspan="1" class="confluenceTh">Ticket:</th><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">11428565</span></td></tr><tr><th colspan="1" class="confluenceTh"><span style="color: rgb(0,0,0);">Requisito/S</span><span style="color: rgb(0,0,0);">tory/Issue</span><span style="color: rgb(47,57,65);">:</span></th><td colspan="1" class="confluenceTd">DSERCTR1-35345</td></tr></tbody></table>
+                </div>
+				<div class="w3-panel w3-left-align">Países: BRASIL</div>
+                <div class="w3-panel w3-right-align">37 minutos atrás</div>
+			</div>
+		</div>
+
+
+
+        <div class="app-toggle w3-panel">
+            <div class="w3-card-4 w3-panel">
+                <div class="w3-panel">
+                    <div class="w3-large">13022423 DSERCTR1-35056 DT PCOA310 - Performance na exclusão de Lançamentos</div>
+                    <div><a href="https://tdn.totvs.com/pages/releaseview.action?pageId=657551905" target="_blank">https://tdn.totvs.com/pages/releaseview.action?pageId=657551905</a></div>
+                </div>
+                <div class="w3-panel app-hide">
+                    <table class="relative-table wrapped confluenceTable w3-table-all" style="width: 32.6575%;"><colgroup><col style="width: 35.5556%;"/><col style="width: 64.4444%;"/></colgroup><tbody><tr><th colspan="1" class="confluenceTh">Produto:</th><td colspan="1" class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="solucoes_totvs_cross">TOTVS Backoffice</font></p></div></td></tr><tr><th class="confluenceTh">Linha de Produto:</th><td class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="linhas_totvs">Linha Protheus</font></p></div></td></tr><tr><th class="confluenceTh">Segmento:</th><td class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="segmentos_totvs">Backoffice</font></p></div></td></tr><tr><th class="confluenceTh">Módulo:</th><td class="confluenceTd">Planejamento e Controle Orçamentário- SIGAPCO.</td></tr><tr><th class="confluenceTh">Função:</th><td class="confluenceTd">Reprocessamento de Lançamentos (PCOA310)</td></tr><tr><th colspan="1" class="confluenceTh">País:</th><td colspan="1" class="confluenceTd">Brasil</td></tr><tr><th colspan="1" class="confluenceTh">Ticket:</th><td colspan="1" class="confluenceTd">13022423</td></tr><tr><th colspan="1" class="confluenceTh"><span style="color: rgb(0,0,0);">Requisito/S</span><span style="color: rgb(0,0,0);">tory/Issue</span><span style="color: rgb(47,57,65);">:</span></th><td colspan="1" class="confluenceTd">DSERCTR1-35056</td></tr></tbody></table>
+                </div>
+				<div class="w3-panel w3-left-align">Países: BRASIL</div>
+                <div class="w3-panel w3-right-align">30 dez, 2021</div>
+			</div>
+		</div>
+
+
+
+        <div class="app-toggle w3-panel">
+            <div class="w3-card-4 w3-panel">
+                <div class="w3-panel">
+                    <div class="w3-large">12977363 DSERCTR1-35021 DT Símbolo de moeda não aparece no valor.</div>
+                    <div><a href="https://tdn.totvs.com/pages/releaseview.action?pageId=657224658" target="_blank">https://tdn.totvs.com/pages/releaseview.action?pageId=657224658</a></div>
+                </div>
+                <div class="w3-panel app-hide">
+                    <table class="relative-table wrapped confluenceTable w3-table-all" style="width: 32.6575%;"><colgroup><col style="width: 35.5556%;"/><col style="width: 64.4444%;"/></colgroup><tbody><tr><th colspan="1" class="confluenceTh">Produto:</th><td colspan="1" class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="solucoes_totvs_cross">TOTVS Backoffice</font></p></div></td></tr><tr><th class="confluenceTh">Linha de Produto:</th><td class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="linhas_totvs">Linha Protheus</font></p></div></td></tr><tr><th class="confluenceTh">Segmento:</th><td class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="segmentos_totvs">Serviços</font></p></div></td></tr><tr><th class="confluenceTh">Módulo:</th><td class="confluenceTd">Planejamento e Controle Orçamentário (SIGAPCO)</td></tr><tr><th class="confluenceTh">Função:</th><td class="confluenceTd">Cadastro de Classes (<span style="color: rgb(23,43,77);">PCOA020)</span></td></tr><tr><th colspan="1" class="confluenceTh">País:</th><td colspan="1" class="confluenceTd">Brasil</td></tr><tr><th colspan="1" class="confluenceTh">Ticket:</th><td colspan="1" class="confluenceTd">12977363</td></tr><tr><th colspan="1" class="confluenceTh"><span style="color: rgb(0,0,0);">Requisito/S</span><span style="color: rgb(0,0,0);">tory/Issue</span><span style="color: rgb(47,57,65);">:</span></th><td colspan="1" class="confluenceTd">DSERCTR1-35021</td></tr></tbody></table>
+                </div>
+				<div class="w3-panel w3-left-align">Países: BRASIL</div>
+                <div class="w3-panel w3-right-align">27 dez, 2021</div>
+			</div>
+		</div>
+
+
+
+        <div class="app-toggle w3-panel">
+            <div class="w3-card-4 w3-panel">
+                <div class="w3-panel">
+                    <div class="w3-large">12546996 DSERCTR1-34363 DT Performance rotina de manutenção da planilha orçamentária</div>
+                    <div><a href="https://tdn.totvs.com/pages/releaseview.action?pageId=653163583" target="_blank">https://tdn.totvs.com/pages/releaseview.action?pageId=653163583</a></div>
+                </div>
+                <div class="w3-panel app-hide">
+                    <table class="relative-table wrapped confluenceTable w3-table-all" style="width: 32.6575%;"><colgroup><col style="width: 35.5556%;" /><col style="width: 64.4444%;" /></colgroup><tbody><tr><th colspan="1" class="confluenceTh">Produto:</th><td colspan="1" class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="solucoes_totvs_cross">TOTVS Backoffice</font></p></div></td></tr><tr><th class="confluenceTh">Linha de Produto:</th><td class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="linhas_totvs">Linha Protheus</font></p></div></td></tr><tr><th class="confluenceTh">Segmento:</th><td class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="segmentos_totvs">Serviços</font></p></div></td></tr><tr><th class="confluenceTh">Módulo:</th><td class="confluenceTd">Planejamento e Controle Orçamentário (SIGAPCO)</td></tr><tr><th class="confluenceTh">Função:</th><td class="confluenceTd">Manutenção da Planilha Orçamentária (PCOA100)</td></tr><tr><th colspan="1" class="confluenceTh">País:</th><td colspan="1" class="confluenceTd">Brasil</td></tr><tr><th colspan="1" class="confluenceTh">Ticket:</th><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">12546996</span></td></tr><tr><th colspan="1" class="confluenceTh"><span style="color: rgb(0,0,0);">Issue</span><span style="color: rgb(47,57,65);">&nbsp;:</span></th><td colspan="1" class="confluenceTd">DSERCTR1-34363</td></tr></tbody></table>
+                </div>
+				<div class="w3-panel w3-left-align">Países: BRASIL</div>
+                <div class="w3-panel w3-right-align">3 minutos atrás</div>
+			</div>
+		</div>
+
+
+
+        <div class="app-toggle w3-panel">
+            <div class="w3-card-4 w3-panel">
+                <div class="w3-panel">
+                    <div class="w3-large">12730395 DSERCTR1-34387 DT PCOA530 - usa contingencia para pedido de CC e CO diferente</div>
+                    <div><a href="https://tdn.totvs.com/pages/releaseview.action?pageId=652583237" target="_blank">https://tdn.totvs.com/pages/releaseview.action?pageId=652583237</a></div>
+                </div>
+                <div class="w3-panel app-hide">
+                    <table class="relative-table wrapped confluenceTable w3-table-all" style="width: 32.6575%;"><colgroup><col style="width: 35.5556%;"/><col style="width: 64.4444%;"/></colgroup><tbody><tr><th colspan="1" class="confluenceTh">Produto:</th><td colspan="1" class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="solucoes_totvs_cross">TOTVS Backoffice</font></p></div></td></tr><tr><th class="confluenceTh">Linha de Produto:</th><td class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="linhas_totvs">Linha Protheus</font></p></div></td></tr><tr><th class="confluenceTh">Segmento:</th><td class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="segmentos_totvs">Serviços</font></p></div></td></tr><tr><th class="confluenceTh">Módulo:</th><td class="confluenceTd">Planejamento e Controle Orçamentário (SIGAPCO)</td></tr><tr><th class="confluenceTh">Função:</th><td class="confluenceTd">Solicitar (PCOA530)</td></tr><tr><th colspan="1" class="confluenceTh">País:</th><td colspan="1" class="confluenceTd">Brasil</td></tr><tr><th colspan="1" class="confluenceTh">Ticket:</th><td colspan="1" class="confluenceTd">12730395</td></tr><tr><th colspan="1" class="confluenceTh"><span style="color: rgb(0,0,0);">Requisito/S</span><span style="color: rgb(0,0,0);">tory/Issue</span><span style="color: rgb(47,57,65);"> :</span></th><td colspan="1" class="confluenceTd">DSERCTR1-34387</td></tr></tbody></table>
+                </div>
+				<div class="w3-panel w3-left-align">Países: BRASIL</div>
+                <div class="w3-panel w3-right-align">5 minutos atrás</div>
+			</div>
+		</div>
+
+
+
+        <div class="app-toggle w3-panel">
+            <div class="w3-card-4 w3-panel">
+                <div class="w3-panel">
+                    <div class="w3-large">12450746 DMANMAT02-35081 DT SC gerada pela rotina de ponto de pedido não valida o bloqueio do PCO</div>
+                    <div><a href="https://tdn.totvs.com/x/U-LbJg" target="_blank">https://tdn.totvs.com/x/U-LbJg</a></div>
+                </div>
+                <div class="w3-panel app-hide">
+                    <table class="relative-table wrapped confluenceTable w3-table-all" style="width: 32.6575%;"><colgroup><col style="width: 35.5556%;"/><col style="width: 64.4444%;"/></colgroup><tbody><tr><th colspan="1" class="confluenceTh">Produto:</th><td colspan="1" class="confluenceTd"><div class="content-wrapper"><p>Totvs Backoffice</p></div></td></tr><tr><th class="confluenceTh">Linha de Produto:</th><td class="confluenceTd">Linha Protheus</td></tr><tr><th class="confluenceTh">Segmento:</th><td class="confluenceTd"><div class="content-wrapper"><p>BackOffice</p></div></td></tr><tr><th class="confluenceTh">Módulo:</th><td class="confluenceTd">Compras</td></tr><tr><th class="confluenceTh">Função:</th><td class="confluenceTd">MATA170</td></tr><tr><th colspan="1" class="confluenceTh">Ticket:</th><td colspan="1" class="confluenceTd"><p>12450746</p></td></tr><tr><th colspan="1" class="confluenceTh"><span style="color: rgb(0,0,0);">Issue </span><span style="color: rgb(47,57,65);">:</span></th><td colspan="1" class="confluenceTd"><p>DMANMAT02-35081</p></td></tr></tbody></table>
+                </div>
+				<div class="w3-panel w3-left-align">Países: TODOS</div>
+                <div class="w3-panel w3-right-align">7 minutos atrás</div>
+			</div>
+		</div>
+
+
+
+        <div class="app-toggle w3-panel">
+            <div class="w3-card-4 w3-panel">
+                <div class="w3-panel">
+                    <div class="w3-large">12306626 DSERCTR1-34579 DT Não filtra por operacao planilha detalhada</div>
+                    <div><a href="https://tdn.totvs.com/pages/releaseview.action?pageId=651660779" target="_blank">https://tdn.totvs.com/pages/releaseview.action?pageId=651660779</a></div>
+                </div>
+                <div class="w3-panel app-hide">
+                    <table class="relative-table wrapped confluenceTable w3-table-all" style="width: 32.6575%;"><colgroup><col style="width: 35.5556%;"/><col style="width: 64.4444%;"/></colgroup><tbody><tr><th colspan="1" class="confluenceTh">Produto:</th><td colspan="1" class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="solucoes_totvs_cross">TOTVS Backoffice</font></p></div></td></tr><tr><th class="confluenceTh">Linha de Produto:</th><td class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="linhas_totvs">Linha Protheus</font></p></div></td></tr><tr><th class="confluenceTh">Segmento:</th><td class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="segmentos_totvs">Backoffice</font></p></div></td></tr><tr><th class="confluenceTh">Módulo:</th><td class="confluenceTd">Planejamento e Controle Orçamentário (SIGAPCO)</td></tr><tr><th class="confluenceTh">Função:</th><td class="confluenceTd"><p>PCOR045 - Planilha Detalhada</p></td></tr><tr><th colspan="1" class="confluenceTh">País:</th><td colspan="1" class="confluenceTd">Brasil</td></tr><tr><th colspan="1" class="confluenceTh">Ticket:</th><td colspan="1" class="confluenceTd">12306626</td></tr><tr><th colspan="1" class="confluenceTh"><span style="color: rgb(0,0,0);">Requisito/S</span><span style="color: rgb(0,0,0);">tory/Issue</span><span style="color: rgb(47,57,65);"> :</span></th><td colspan="1" class="confluenceTd">DSERCTR1-34579</td></tr></tbody></table>
+                </div>
+				<div class="w3-panel w3-left-align">Países: BRASIL</div>
+                <div class="w3-panel w3-right-align">22 nov, 2021</div>
+			</div>
+		</div>
+
+
+
+        <div class="app-toggle w3-panel">
+            <div class="w3-card-4 w3-panel">
+                <div class="w3-panel">
+                    <div class="w3-large">12630576 DSERCTR1-34223 DT Erro na alteração na Manutenção de Lançamentos</div>
+                    <div><a href="https://tdn.totvs.com/pages/releaseview.action?pageId=645481330" target="_blank">https://tdn.totvs.com/pages/releaseview.action?pageId=645481330</a></div>
+                </div>
+                <div class="w3-panel app-hide">
+                    <table class="relative-table wrapped confluenceTable w3-table-all" style="width: 32.6575%;"><colgroup><col style="width: 35.5556%;"/><col style="width: 64.4444%;"/></colgroup><tbody><tr><th colspan="1" class="confluenceTh">Produto:</th><td colspan="1" class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="solucoes_totvs_cross">TOTVS Backoffice</font></p></div></td></tr><tr><th class="confluenceTh">Linha de Produto:</th><td class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="linhas_totvs">Linha Protheus</font></p></div></td></tr><tr><th class="confluenceTh">Segmento:</th><td class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="segmentos_totvs">Serviços</font></p></div></td></tr><tr><th class="confluenceTh">Módulo:</th><td class="confluenceTd">Planejamento e Controle Orçamentário - SIGAPCO</td></tr><tr><th class="confluenceTh">Função:</th><td class="confluenceTd">Manutenção de Lançamentos - PCOA050</td></tr><tr><th colspan="1" class="confluenceTh">País:</th><td colspan="1" class="confluenceTd">Brasil</td></tr><tr><th colspan="1" class="confluenceTh">Ticket:</th><td colspan="1" class="confluenceTd">12630576</td></tr><tr><th colspan="1" class="confluenceTh"><span style="color: rgb(0,0,0);">Requisito/S</span><span style="color: rgb(0,0,0);">tory/Issue</span><span style="color: rgb(47,57,65);">:</span></th><td colspan="1" class="confluenceTd">DSERCTR1-34223</td></tr></tbody></table>
+                </div>
+				<div class="w3-panel w3-left-align">Países: BRASIL</div>
+                <div class="w3-panel w3-right-align">ontem às 7:00 PM</div>
+			</div>
+		</div>
+
+
+
+        <div class="app-toggle w3-panel">
+            <div class="w3-card-4 w3-panel">
+                <div class="w3-panel">
+                    <div class="w3-large">12453775 DSERCTR1-34034 DT PCOA009 Lentidão no processo de integração XML</div>
+                    <div><a href="https://tdn.totvs.com/pages/releaseview.action?pageId=644017377" target="_blank">https://tdn.totvs.com/pages/releaseview.action?pageId=644017377</a></div>
+                </div>
+                <div class="w3-panel app-hide">
+                    <table class="relative-table wrapped confluenceTable w3-table-all" style="width: 32.6575%;"><colgroup><col style="width: 35.5556%;"/><col style="width: 64.4444%;"/></colgroup><tbody><tr><th colspan="1" class="confluenceTh">Produto:</th><td colspan="1" class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="solucoes_totvs_cross">TOTVS Backoffice</font></p></div></td></tr><tr><th class="confluenceTh">Linha de Produto:</th><td class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="linhas_totvs">Linha Protheus</font></p></div></td></tr><tr><th class="confluenceTh">Segmento:</th><td class="confluenceTd"><div class="content-wrapper"><p>   <font class="conf-macro output-inline" data-hasbody="false" data-macro-name="segmentos_totvs">Serviços</font></p></div></td></tr><tr><th class="confluenceTh">Módulo:</th><td class="confluenceTd">Planejamento e Controle Orçamentário (SIGAPCO)</td></tr><tr><th class="confluenceTh">Função:</th><td class="confluenceTd">Reprocessamento dos Pontos de Integração – PCOA009</td></tr><tr><th colspan="1" class="confluenceTh">País:</th><td colspan="1" class="confluenceTd">Brasil</td></tr><tr><th colspan="1" class="confluenceTh">Ticket:</th><td colspan="1" class="confluenceTd"><span style="color: rgb(23,43,77);">12453775</span></td></tr><tr><th colspan="1" class="confluenceTh"><span style="color: rgb(0,0,0);">Requisito/S</span><span style="color: rgb(0,0,0);">tory/Issue</span><span style="color: rgb(47,57,65);">:</span></th><td colspan="1" class="confluenceTd">DSERCTR1-34034</td></tr></tbody></table>
+                </div>
+				<div class="w3-panel w3-left-align">Países: BRASIL</div>
+                <div class="w3-panel w3-right-align">cerca de 7 horas atrás</div>
+			</div>
+		</div>
+
+
+</body></html>
