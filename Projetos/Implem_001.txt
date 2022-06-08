@@ -1,0 +1,3 @@
+Por conta do pequeno volume de rateio por CC dos Ped De Compras no ambiente teste deve-se questionar Silas/Felipe se teste está atualizado.
+Que parcelas ( colunas ) do Pedido comporão o Valor do lançamento?
+Qual histórico desejado?
