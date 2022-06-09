@@ -33,6 +33,17 @@ Dia 02/06/2022
     Término 15:00
 
     Total = 6 Horas
+================================
+
+Dia 08/06/2022
+    Início 08:00
+        Criação Planilha ORCAM-2021
+        Configuração Processo 000052 ítem 01
+        Reprocessamento
+        Correção de inconsistências
+    Término 15:00
+
+    Total = 6 horas 
 
 
 
