@@ -1,0 +1,38 @@
+================================
+Dia 25/05/2022
+    Início 10:30
+        Verificação Ambiente Teste
+        Reunião com Silas para fornecer maiores especificações de dados a respeito das regras de negócios.
+            ( Ele ainda não nos encaminhou estes dados )
+        Atualização de parametros fundamentais do PCO
+        Adequação do Compartilhamento de Tabelas
+    Término 16:30
+    Sub-Total de horas 06 horas - 01 hora almoço = 5 horas
+    Traslado 30 minutos chegada + 30 minutos saída = 1 hora
+    
+    Total = 6 horas
+================================
+
+Dia 27/05/2022 ( Home )
+    Início 08:00
+        Preparação para iniciar configuração do Processo de Pedido de Compras
+            Foi verificado que não havia algumas tabelas auto-contidas. Por exemplo, AK8.
+            Analisei se nas Atualizações de Ambiente sugeridas pela Totvs haveria a população de tais tabelas.
+            Aparentemente não seriam gerados os dados pertinentes. Resolvi então implementar a Build 12_1_33 já que em minha máquina eu tenho a 27.
+            Fazendo todos os Downloads do TDN Totvs e configurando a Versão 33 constatei que as tabelas auto-contidas não dependem, aparentemente, de nenhuma atualização sugerida pela Totvs.
+    Término 12:00
+
+    Total = 4 horas
+
+    Gran Total = 10 horas
+================================
+
+Dia 02/06/2022
+    Início 09:00
+        Finalização das Especificações junto ao Silas
+    Término 15:00
+
+    Total = 6 Horas
+
+
+

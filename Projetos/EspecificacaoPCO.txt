@@ -84,7 +84,7 @@ Todos os produtos cadastrados são vinculados a uma conta contábil especifica, 
 Isto definirá, através de uma expressão AdvPl, a Conta Contábil a ser considerada na configuração do 
 Lançamento Orçamentário.
 No caso de eventual campo do Banco estiver vazio o Lançamento será desviado para uma conta de "Vala" 
-especificada no grupo 9 do Plano de Contas.
+especificada no grupo 7 do Plano de Contas.
 No Reprocessamento de Lançamentos do exercício anterior para gerar um dataset para a Planilha Orçamentária
 do exercício atual, essas inconsistências serão checadas.
 Isto para evitar que o usuário veja surgir uma tela do PCO quando de uma inserção de Lançamento de algum Processo.
