@@ -53,7 +53,8 @@ Dia 09/06/2022
         Configuração Processo 000054 ítem 09
         Reprocessamento janeiro 2021
         Simulação Inclusão Ped de Compras
-    Término 15:00
+        Simulação Baixa de Pedido de Compras 
+    Término 16:00
 
     Total = 7 horas
      
