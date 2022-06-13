@@ -57,7 +57,10 @@ Dia 09/06/2022
     TÃ©rmino 16:00
 
     Total = 7 horas
-     
+
+    Dia 13/06/2022
+        Início 07:00
+            Preparação/Geração Planilha Orçamentária ( excel ) para análise Silas     
 
 
 

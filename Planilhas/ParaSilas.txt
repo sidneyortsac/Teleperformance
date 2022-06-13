@@ -1,0 +1,11 @@
+Silas,
+
+Por favor, analise, por amostragem, a Planilha MovimOrcamentario_03.xlsx.
+referem-se a m,ovimentos de janeiro de 2021.
+Principalmente as colunas ContaOrcamentaria, CentroCusto e a coluna Valor para ver se são consistentes.
+Você vai ver que na coluna ContaOrcamentaria vai aparecer a conta "922111111" e na coluna CentroCusto o CC "7000".
+Esses valores representam o que chamei de "Vala", lembra?
+Com relação à coluna "Historico" veja que tipo de informação seria a mais adequada considerando o Processo envolvido.
+O Processo pode ser uma Entrada de NF, a emissão de um Pedido de Compras ou a Baixa de um Pedido de Compras.
+Encaminhe as correções para mim.
+
