@@ -1,0 +1,5 @@
+dia 13/06/2022
+    Cobrar do Jesus a "correção" do Workflow para inserção do Pedido de Compras
+    Checar a consistência da alocação de conta orçamentária e valor nos Processos 000052 e 000054
+    Checar a geração de linha no Processo 000054 / Baixa do Pedido de Compras
+    Configurar o Processo de Inclusão de Títulos ( inclusive por rateio )
