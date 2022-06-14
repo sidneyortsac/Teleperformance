@@ -3,3 +3,21 @@ dia 13/06/2022
     Checar a consistência da alocação de conta orçamentária e valor nos Processos 000052 e 000054
     Checar a geração de linha no Processo 000054 / Baixa do Pedido de Compras
     Configurar o Processo de Inclusão de Títulos ( inclusive por rateio )
+
+dia 14/06/2022
+    Desligar a configuração ON-LINE
+    Checar o lançamento contábil de nf de entrada 650
+        conta contabil ==> IIF(EMPTY(SD1->D1_CONTA), SB1->B1_CONTA, SD1->D1_CONTA)     conta default 922111111 
+        valor ==> IIF(SUBS(SD1->D1_CF,1,4) $"1102/2102/1403/2403/3102",(SD1->D1_TOTAL+SD1->D1_VALIPI-SD1->D1_VALDESC)+SD1->D1_VALFRE,0)
+        cc ==> SD1->D1_CC   # Atenção DESBLOQUEAR TODOS OS CC
+
+        GetAdvFval(cAlias,uCpo,uChave,nOrder,uDef)
+            cAlias  ==> Alias do Arquivo
+            uCpo    ==> Nome de um campo ou array contendo os nomes dos campos desejados
+            uChave  ==> Chave para a pesquisa
+            nOrder  ==> Ordem do índice para a pesquisa
+            uDef    ==> Valor a ser retornado caso a chave não seja encontrada 
+
+    Checar a consistência da alocação de conta orçamentária e valor nos Processos 000052 e 000054
+    Checar a geração de linha no Processo 000054 / Baixa do Pedido de Compras
+    Configurar o Processo de Inclusão de Títulos ( inclusive por rateio )
