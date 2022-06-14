@@ -21,3 +21,7 @@ dia 14/06/2022
     Checar a consistência da alocação de conta orçamentária e valor nos Processos 000052 e 000054
     Checar a geração de linha no Processo 000054 / Baixa do Pedido de Compras
     Configurar o Processo de Inclusão de Títulos ( inclusive por rateio )
+
+    Desbloquear CC
+    Mudar o tipo no Processo de Baixa do Ped de Compras ( Oposto da Inclusão )
+
