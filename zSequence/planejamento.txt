@@ -25,3 +25,9 @@ dia 14/06/2022
     Desbloquear CC
     Mudar o tipo no Processo de Baixa do Ped de Compras ( Oposto da Inclusão )
 
+    dia 15/06/2022
+        Verificar rateio na NF Entrada
+            verificar campo D1_RATEIO  1=Sim, 2=Não 
+            verificar DE_DOC = "453182"  D1_RATEIO = "1"
+            Campo Valor da AKC ==> IF(SD1->D1_RATEIO="1",0,SD1->D1_TOTAL)
+
