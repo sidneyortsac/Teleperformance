@@ -60,7 +60,22 @@ Dia 09/06/2022
 
     Dia 13/06/2022
         Início 07:00
-            Preparação/Geração Planilha Orçamentária ( excel ) para análise Silas     
+            Preparação/Geração no Compartilhamento da Planilha Orçamentária ( excel ) para análise Silas.
+            Levando em conta Tipo de Nota Fiscal e Filial no Processo 000054 - NF de Entrada
+            Levando em conta TES e Filial no Processo 000052 - Pedido de Compras
+        Término 12:00
+
+    Total = 5 horas
+
+    dia 14/06/2022
+        Início 08:00
+            Simulação Inclusão Ped de Compras considerando Rateio
+            Simulação Inclusão de NF de Entrada considerando Rateio
+            Configurando Processos 000052 e 000054 para não deletar no Movimento Orçamentário mas sim alterar Status do Lote 
+            Testar chave ( compartilhamento ) para no Movimento Orçamentário localizar corretamente o Processo origem.
+        Término 17:00
+
+    Total = 8 horas     
 
 
 
