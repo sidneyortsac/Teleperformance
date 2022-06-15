@@ -75,7 +75,16 @@ Dia 09/06/2022
             Testar chave ( compartilhamento ) para no Movimento Orçamentário localizar corretamente o Processo origem.
         Término 17:00
 
-    Total = 8 horas     
+    Total = 8 horas
+
+    dia 15/06/2022
+        Início 13:00
+            Configuração Contas a Pagar (FINA050)
+            SE2 e CV4   CTJ é a tabela de rateio pré-configurado
+             E2_RATEIO   S=Sim;N=Nao
+
+
+        Término 16:00     
 
 
 
