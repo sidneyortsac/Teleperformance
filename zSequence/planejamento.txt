@@ -30,4 +30,6 @@ dia 14/06/2022
             verificar campo D1_RATEIO  1=Sim, 2=Não 
             verificar DE_DOC = "453182"  D1_RATEIO = "1"
             Campo Valor da AKC ==> IF(SD1->D1_RATEIO="1",0,SD1->D1_TOTAL)
+            verificar D1_DOC="000000005"
+            Campo SC7->C7_RATEIO  "1"=SIM
 
