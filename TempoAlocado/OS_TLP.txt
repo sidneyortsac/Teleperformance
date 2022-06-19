@@ -89,5 +89,24 @@ Dia 09/06/2022
             Analisar ( Configuração On-Line ) a Baixa do Pedido de Compras -  000054/15 quanto a:
                 Data da Baixa e Valor tendo em vista que pode ser uma Baixa Parcial
                 Qual valor vai na Baixa? O do SC7 ou o da NF Entrada?
+            Término
+
+     dia 20/06/2022 ( planejamento )
+        Início 08:00
+            Configuração On-Line ( Debug )  dos Processos 000054 ítens 09 e 15
+                09 ==> Rateio por CC
+                15 ==> Baixa Pedido de Compras
+            Configuração On-Line ( Debug )  do Processo 000052 ítens 08
+                08 ==> Rateio por CC
+
+            Marcar Presencial na TLP para verificar Inclusão A Pagar
+                Quanto aos tipos de títulos
+                Quanto ao Rateio
+        Término
+    
+    dia 21/06/2022 ( planejamento )
+        Início 08:00
+            Levantamento/Checagem de Compartilhamento Tabelas PCO
+        Término
 
 
