@@ -1,0 +1,15 @@
+Movimentos Orcamentarios
+    Status dos Lotes - Apenas Status 1 entra nos calculos
+    Quando aparece "Tela Orcamentaria para o usuario"?
+    Consulta Origem
+
+Planilhas Orcamentarias
+    Inclusao
+    Alteracao
+        Inclusao Contas
+            Inclusao CCustos
+    Copia de Planilhas
+    Total por CC e Acumulados
+
+Relatorios
+    Mostrar Cubos Comparativos
