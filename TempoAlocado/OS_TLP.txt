@@ -98,7 +98,7 @@ Dia 09/06/2022
                 15 ==> Baixa Pedido de Compras
             Configuração On-Line ( Debug )  do Processo 000052 ítens 08
                 08 ==> Rateio por CC
-
+                ** Acertar posicionamento no Reprocessamento
             Marcar Presencial na TLP para verificar Inclusão A Pagar
                 Quanto aos tipos de títulos
                 Quanto ao Rateio

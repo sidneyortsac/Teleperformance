@@ -1,0 +1,65 @@
+Status PCO:
+
+Processo 000052 Ítem 01 => Inclusão PC Compras - Ítens - Configurado
+Processo 000052 Ítem 08 => Inclusão PC Compras - Rateio por CC - Configurado
+Processo 000054 Ítem 01 => Inclusão Doc de Entrada - Ítens - Configurado
+Processo 000054 Ítem 09 => Inclusão Doc de Entrada - Rateios por CC Ítens - Configurado
+Processo 000054 Ítem 15 => Inclusão Doc de Entrada - Rateios por CC Ítens - Configurado
+
+Processo 000002 Ítem 01 => Inclusão de Títulos a Pagar -  Em Configuração
+Processo 000021 Ítem 01 => Inclusão de Títulos a Pagar - Rateio por CC -  Em Configuração
+
+Treinamento de Inserção/Manutenção de Planilha para usuário-chave ( acredito seja o Silas ) - pendente
+Treinamento de Manutenção de Movimentos Orçamentários para usuário-chave ( acredito seja o Silas ) - pendente
+
+Enviei relatório de Movimentos Orçamentários, Processos 000052 e 000054 para o Silas validar.
+Acredito que esta semana ele me retorne.
+É necessária está validação porque parametrizei o que é usual mas pode ser que na TLP seja diferente.
+Por exemplo, eu coloquei como Valor do Processo de Pedido de Compras a seguinte “soma”:
+C7_TOTAL + C7_FRETE + C7_VALIPI + C7_SEGURO + C7_DESPESA + C7_VALFRE - C7_DESC
+No Processo de Entrada de NF o Valor está assim configurado:
+D1_TOTAL + D1_VALIPI - D1_VALDESC + D1_VALFRE
+
+Como na especificação do Projeto ficou definido que seria um único Orçamento para todas as filiais,
+no Histórico dos Movimentos enviados ao Silas especifiquei a Filial de Origem.
+No caso dos Pedidos de Compras especifiquei o num do Pedido, Produto e TES
+No caso da NF de Entrada especifiquei o Tipo de Nota, num da NF Produto e Classificação Fiscal
+Essas informações foram processadas sem nenhum filtro para que na validação o Silas exclua dados que
+não devem entrar no Orçamento. Assim, deverão ser excluídas das respectivas configurações.
+Por exemplo, pode ser que a Classificação Fiscal 1933 não deva ser processada na NF de Entrada.
+Ou que a TES 003 não deva ser processada no Ped de Compras.
+Todos os Lançamentos enviados ao Silas se referem ao período de Janeiro/2021 para que possam ser verificados no
+ambiente de Produção.
+Detectei, semana passada, que o Rateio de CC do Ped de Compras não está coerente com o Rateio da NF de Entrada.
+Na verdade é mínimo o Rateio por CC no Pedido de Compras. É preciso decidir como vamos lidar com isso pois na
+especificação do Projeto ficou definido que o SaldoBloqueio no Pedido de Compras seria dado pelos seguintes Tipos de Saldos de Movimentos:
+
+SaldoBloqueio = OR (orçado) + BX (PCs baixados) - [ EM (PCs empenhados) + RE (todo o realizado) ]
+ 
+Assim se o Ped de Compras não for rateado mas sua respectiva NF de Entrada o for, haverá uma distorção no cálculo.
+
+Nesta semana sugiro uma reunião presencial (com Silas e Felipe, pela manhã ou à tarde ) para definirmos essas questões acima.
+
+Acredito que até o dia 10/07, pode ser até antes, já poderemos colocar no ar. Neste quadro Reprocessamos do dia
+01 até o dia 10/07 e aí o PCO será colocado on-line. 
+Durante um mês deixamos sem Bloqueio acompanhando os Movimentos e a partir de então ligamos o Bloqueio.
+
+========================
+Verificar com usuários:
+Lançamentos com Rateio:
+Processo Titulos a Pagar
+Processo Entrada NF
+Resíduos Pedido de Compras
+
+Ratificar com Saulo 
+
+1) Por exemplo, eu coloquei como Valor do Processo de Pedido de Compras a seguinte “soma”:
+    C7_TOTAL + C7_FRETE + C7_VALIPI + C7_SEGURO + C7_DESPESA + C7_VALFRE - C7_DESC
+    No Processo de Entrada de NF o Valor está assim configurado:
+    D1_TOTAL + D1_VALIPI - D1_VALDESC + D1_VALFRE
+
+2) Serão todos os Tipos de NF de Entrada? Dependerão de TES, ou Classificação Fiscal, para entrarem ou não no Orçamento?
+3) E quanto aos Pedidos de Compras, sofrerão alguma restrição quanto à TES?
+4) E quanto aos Títulos a Pagar, todos os tipos serão considerados?
+5) Não haverá Orçamentos por Filiais, tudo será compartilhado?
+6) RAteio do Pedido de Compras não está coerente com a NF de Entrada.
