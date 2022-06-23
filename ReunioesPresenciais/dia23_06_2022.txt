@@ -71,4 +71,7 @@ Verificar se CC não estiver no Orcamento como bloquear ???? pendente com Felipe 
 Pedido de Compras não sofrerá nenhum filtro quanto à TES não haverá rateio 
 E quanto aos Títulos a Pagar, todos os tipos serão considerados? Considerar, pelo menos, PA aguardando a regra Rateio por Múltipla Natureza
 NF de Entrada  - não há rateio
-Entrada Titulos a Pagar têm rateio.  Rateio por Multiplas Naturezas 
+Entrada Titulos a Pagar têm rateio.  Rateio por Multiplas Naturezas
+
+Lembrete: testar Cubos Comparativos quanto à velocidade na geração dos cubos.
+    Processar AKD começando com apenas 2 registros e ir acrescentando paulatinamente.
