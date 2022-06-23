@@ -59,7 +59,16 @@ Ratificar com Saulo
     D1_TOTAL + D1_VALIPI - D1_VALDESC + D1_VALFRE
 
 2) Serão todos os Tipos de NF de Entrada? Dependerão de TES, ou Classificação Fiscal, para entrarem ou não no Orçamento?
-3) E quanto aos Pedidos de Compras, sofrerão alguma restrição quanto à TES?
+3) E quanto aos Pedidos de Compras, sofrerão alguma restrição quanto à TES? Não 
 4) E quanto aos Títulos a Pagar, todos os tipos serão considerados?
 5) Não haverá Orçamentos por Filiais, tudo será compartilhado?
 6) RAteio do Pedido de Compras não está coerente com a NF de Entrada.
+
+
+=============
+Haverá Bloqueio na NF de Entrada - somente tipo de NF "N"
+Verificar se CC não estiver no Orcamento como bloquear ???? pendente com Felipe passei para ele sql AKD para corrigir pelo Power BI através de Joins de Tabelas
+Pedido de Compras não sofrerá nenhum filtro quanto à TES não haverá rateio 
+E quanto aos Títulos a Pagar, todos os tipos serão considerados? Considerar, pelo menos, PA aguardando a regra Rateio por Múltipla Natureza
+NF de Entrada  - não há rateio
+Entrada Titulos a Pagar têm rateio.  Rateio por Multiplas Naturezas 
