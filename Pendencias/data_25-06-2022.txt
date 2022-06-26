@@ -1,0 +1,41 @@
+Acertado Lancamento Processo Pedido de Compras quanto à procura da CONTA 
+Desabilitado o Lancamento de Rateio já que foi definido por Silas e Felipe que não haverá.
+Criada ORCA-2022 por período Mensal e não quinzenal 
+
+Testar:
+    Emissao de um PC 
+    Sua respectiva Baixa
+    Verificar posicionamento das Tabelas SD1, SDE (rateio) e SC7 quanto ao posicionamento
+        É preciso ir à TLP para saber como na Entrada de NF se referencia a que pedido se refere e verificar se posiciona 
+
+
+Criar Lancamento Processo 000252
+Criar o Cubo 01
+Criado o Cubo, Configuracoes e Tipo
+Criado Lancamento Processo 000252
+Criado Lancamento Processo 000356
+Criar Lancamento Processo 000002 - Titulos a Pagar ( Exceto Tipos "PR" e "PA")
+    Contabil E2_Contad,
+    Mult Natureza E2_Multnat
+    Num Titulo E2_Num 
+    Tipo E2_Tipo
+    Fornecedor E2_Fornece
+    Emissao E2_Emissao
+    Valor E2_Valor
+    CC E2_Ccusto
+    
+    Quando entra por MultNatureza abre Tabela SEV ( Titulo 2000 Prefixo 2000 na SE2 entra como E2_Multnat = "1" SIM mas E2_Rateio = "N")  
+    Para startar Rateio CC Campo EV_Rateicc recebe "1" ai abre tabela SEZ
+    EZ_Ccusto, EZ_Valor, EZ_Perc, EZ_Conta 
+
+    Simulacao:
+
+    Nota 5000 Prefixo ZZZ ==> nao eh multipla natureza
+        E2_Multnat = "2" então não é multnatureza e nem é rateada ==> E2_Contad e E2_Ccusto
+
+    Nota 6000 Prefizo ZZZ ==> multipla natureza com rateio não em todas naturezas
+        E2_Multnat = "1" então se é multnat e EV_Rateicc = "2" Nao só, entra no SEV
+        mas E2_Multnat = "1" e EV_Rateicc = "1" Sim Entra no SEV e SEZ 
+
+    Nota 7000 Prefizo ZZZ ==> multipla natureza com rateio em todas naturezas
+        E2_Multnat = "1" e EV_Rateicc = "1" 
