@@ -75,3 +75,4 @@ Entrada Titulos a Pagar têm rateio.  Rateio por Multiplas Naturezas
 
 Lembrete: testar Cubos Comparativos quanto à velocidade na geração dos cubos.
     Processar AKD começando com apenas 2 registros e ir acrescentando paulatinamente.
+    ** Analisar que valor vai na Baixa. O do SC7 ou o da NF Entrada? (pendente)

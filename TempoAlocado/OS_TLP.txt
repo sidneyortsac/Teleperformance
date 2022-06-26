@@ -82,14 +82,18 @@ Dia 09/06/2022
             Configuração Contas a Pagar (FINA050)
             SE2 e CV4   CTJ é a tabela de rateio pré-configurado
              E2_RATEIO   S=Sim;N=Nao
-        Término 16:00     
+        Término 16:00 
+
+    Total = 3 horas    
 
     dia 16/06/2022
         Início 08:30
             Analisar ( Configuração On-Line ) a Baixa do Pedido de Compras -  000054/15 quanto a:
                 Data da Baixa e Valor tendo em vista que pode ser uma Baixa Parcial
-                Qual valor vai na Baixa? O do SC7 ou o da NF Entrada?
-            Término
+                Analisar que valor vai na Baixa. O do SC7 ou o da NF Entrada? (pendente)
+        Término 12:30 
+
+    Total = 4 horas
 
      dia 20/06/2022 ( planejamento )
         Início 08:00
@@ -102,11 +106,27 @@ Dia 09/06/2022
             Marcar Presencial na TLP para verificar Inclusão A Pagar
                 Quanto aos tipos de títulos
                 Quanto ao Rateio
-        Término
-    
+        Término 17:00 
+
+        Total = 8 horas
+
     dia 21/06/2022 ( planejamento )
         Início 08:00
             Levantamento/Checagem de Compartilhamento Tabelas PCO
-        Término
+        Término 11:00
+
+    Total = 3 horas
+
+    dia 23/06/2022 - Presencial
+        Inicio 09:00
+            Treinamento para o Silas quanto à estrutura dos Movimentos Orçamentários:
+                Lotes, Status Valido-Invalido-Estornado, Origem do Lancamento, indicando extracao de Tabela para gerar relatorios.
+            Treinamento para o Silas quanto à insercao Planilha Orcamentaria
+            Avaliacao, junto ao Felipe, sobre "checar" comportamento PCO quando CC nao tiver Orcamento
+            Fornecimento ao Felipe de script SQL em cima da AKD ( Movim Orcamentario ) para acompanhamento do PCO no Power BI.
+        Termino 16:00
+
+    Total = 7 horas
+
 
 

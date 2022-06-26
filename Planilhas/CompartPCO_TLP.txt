@@ -1,0 +1,22 @@
+Tab     Nome                            Modo    Modou   Modoemp
+AK1     PLANILHAS ORCAMENTARIAS         C       C       C
+AK2     ITENS DO ORCAMENTO              C       C       C
+AK3     ESTRUTURA DO ORCAMENTO          C       C       C
+AK5     CONTAS ORCAMENTARIAS            C       C       C
+AK6     CLASSES ORCAMENTARIAS           C       C       C
+AK8     PROCESSOS DO SISTEMA            C       C       C
+AK9     ESTRUTURA DO PROCESSO           E       E       E 
+AKA     PONTOS DE BLOQUEIO              C       C       C
+AKB     PONTOS DE LANCAMENTO            C       C       C 
+AKC     CONFIGURACAO LANCAMENTOS        C       C       C 
+AKD     LANCAMENTOS                     C       C       C 
+AKE     REVISOES PLAN ORCAMENTARIAS     C       C       C
+AKF     OPERACOES ORCAMENTARIAS         C       C       C
+AKG     USUARIOS DA PLAN ORCAMENTARIA   E       E       E 
+AKH     CONFIG DOS BLOQUEIOS            C       C       C
+AKI     CONFIG LANCAMENTO BLOQUEIOS     C       C       C
+AKJ     TIPO DE BLOQUEIO                C       C       C
+AKK     TOTAIS DA PLANILHA              E       E       E 
+AKW     ENTIDADES DO CUBO               C       C       C 
+
+
