@@ -67,7 +67,7 @@ caso não seja conveniente definir o Centro de Custo para cada linha da NF de sa
 
 A Apuração de Saldos para avaliação de Bloqueios será:
 
-SaldoBloqueio = OR + BX - ( EM + RE )
+SaldoBloqueio = (OR + BX + RS)  - ( EM + RE )
 
 Quando SaldoBloqueio < 0 ocorrerá o Bloqueio e a possibilidade de Solicitação de Contingência.
 
