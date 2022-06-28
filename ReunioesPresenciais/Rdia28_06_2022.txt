@@ -2,3 +2,38 @@ Principais Pontos:
     a) Aprovacao Pedido de Compras
     b) Processo de Titulo PA - Pgto Antecipado
     c) Natureza X Conta Contabil
+
+
+Quanto ao rateio por MultNat o Processo nunca para na tela "SEV". Sempre vai para "SEZ".
+
+Quanto aos tipos de Título que não entrarao no Orcamento:
+    a) PR
+
+
+Quanto ao PA (Camila) Avaliar com mais cuidado !!!!
+    Quando incluido, o respectivo titulo nao recebe CCusto mas apenas Natureza.
+    Só após a Compensação é que será designado o CCusto.
+    Em qual rotina é feita a Compensação ? FINA750.
+
+Quanto à Baixa do Ped de Compras
+    pode acontecer de a NF de Entrada ser maior que o Pedido? Pode!
+        verificar como isso deverá ser registrado na disponibilidade orcamentaria.
+    na Baixa o Valor ser o do D1_TOTAL e não do C7_TOTAL.
+
+Configurar Residuo.
+Configurado
+
+
+Verificar tabelas CV4, CTJ,SDE e SZE. Sao relacionadas a rateios.
+    SZE => Multiplas Naturezas Rateio por CC
+    SDE => Rateio na NF de Entrada
+    CV4 => Contas a Pagar Rateio nao eh usado
+    CTJ => Sao apenas criterios de rateio
+
+Testar Processo MultNat 
+
+Testar Processo Entrada NF e Baixa com NF de Entrada > Ped de Compras
+    OK mas quando a NF de Entrada for maior do que o Ped de Compras como classificar o Tipo de Saldo
+
+Residuo Checar como funciona 
+Pedi para o Silas pensar a respeito do titulo tipo PA 

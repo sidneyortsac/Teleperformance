@@ -60,4 +60,3 @@ Resolver questoes da reuniao
 Conta e CCusto no Processo 000002
 Detalhar Processo do PA - Pagamento Antecipado
 Verificar Liberacao do PED de Compras.
-   
