@@ -1,3 +1,6 @@
+Do dia 27 
+
+===================
 Acertado Lancamento Processo Pedido de Compras quanto à procura da CONTA 
 Desabilitado o Lancamento de Rateio já que foi definido por Silas e Felipe que não haverá.
 Criada ORCA-2022 por período Mensal e não quinzenal 
@@ -46,4 +49,15 @@ Criar Lancamento Processo 000002 - Titulos a Pagar ( Exceto Tipos "PR" e "PA")
 
     Nota 7000 Prefizo ZZZ ==> multipla natureza com rateio em todas naturezas
         E2_Multnat = "1" e EV_Rateicc = "1" 
+===================
 
+Dia 28/06/2022
+
+Checar Processo 000002
+Criar Processo Residuo
+Resolver questoes da reuniao
+
+Conta e CCusto no Processo 000002
+Detalhar Processo do PA - Pagamento Antecipado
+Verificar Liberacao do PED de Compras.
+   
