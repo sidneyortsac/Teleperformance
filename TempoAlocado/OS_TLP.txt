@@ -128,5 +128,87 @@ Dia 09/06/2022
 
     Total = 7 horas
 
+    =======================
+    Status Projeto TLP Junho/2022
 
+    Relembrando o Projeto Solicitado:
+    Construir Controle Orcamentario em que possa haver Bloqueio em 2 Processos: Ped de Compras e NF de Entrada.
+    Sera considerado tambem o Processo de Inclusao do Contas a Pagar mas, neste caso, sem bloqueio.
+
+    Configurados os seguintes Processos:
+
+        CONTAS A PAGAR - INCLUSAO DE TITULOS A PAGAR
+        CONTAS A PAGAR - RATEIO MULTI NATUREZAS
+        CONTAS A PAGAR - RATEIO C.CUSTO MULTI NATUREZAS
+        PEDIDO DE COMPRAS - INCLUSAO DE PEDIDO DE COMPRAS - ITENS
+        PEDIDO DE COMPRAS - PEDIDO DE COMPRAS - RATEIO POR CC
+        DOCUMENTO DE ENTRADA - INCLUSAO DE DOCUMENTO DE ENTRADA - ITENS
+        DOCUMENTO DE ENTRADA - INCLUSAO DE DOCUMENTO DE ENTRADA - RATEIO POR CC
+        DOCUMENTO DE ENTRADA - BAIXA DO PEDIDO DE COMPRAS - ITENS
+        ELIMINACAO DE RESIDUOS - PEDIDO DE COMPRAS 
+        PLANILHA ORCAMENTARIA - ITENS - ATUALIZACAO DA PLANILHA
+        LIBERACAO DE SOLICITACAO DE CONTINGENCIA - LANCAMENTO DE CONTINGENCIALIBERACAO D
+        LIBERACAO DE SOLICITACAO DE CONTINGENCIA - EMPENHO DE CONTINGENCIALIBERACAO DE S
+            Pendente o Processo de Inclusão de Titulo a Pagar PA - Pagamento Antecipado
+            No Processo da TLP não é informado o CCusto na hora da inclusao e sim na Compensacao
+            Silas avaliará como esse Processo pode ser implementado.
+    
+    Tipos de Saldos
+        OR => SALDO ORCAMENTARIO
+        BX => SALDO DE PEDIDO DE COMPRAS BAIXADO Pendente, comigo, como configurar o Cubo quando o item da NF Entrada for
+              maior que o item do Ped de Compras 
+        RE => SALDO ORCAMENTARIO REALIZADO
+        EM => EMPENHO PED DE COMPRAS
+        CT => CONTINGENCIA
+        EC => EMPENHO CONTINGENCIA
+        RS => ELIMINACAO DE RESIDUOS
+
+    Conta Orcamentaria e CCusto criados para receber ausencia de dados ( criar no SIGACTB já que está sincronizado )
+        Conta Orcamentaria => 922111111 e CCusto => 7000
+
+    A Planilha Orcamentaria teve seu período mudado de Quinzenal para Mensal
+    Os Dados necessários para o correto preenchimento da Planilha foram passados para o Peterson ( via Felipe)
+    No dia 23/06 o Silas recebeu orientação/treinamento presencial quanto:
+        À estrutura dos Movimentos Orçamentários:
+                Lotes, Status Valido-Invalido-Estornado, Origem do Lancamento, indicando extracao de Tabela para gerar relatorios.
+        Treinamento quanto à insercao Planilha Orcamentaria
+                Insercao de Conta Orcamentaria, CCusto e Distribuicao de Valores Orcados
+        Explicação quanto aos Tipos de Saldos
+            Avaliacao, junto ao Felipe, sobre "checar" comportamento PCO quando CC nao tiver Orcamento
+                nao estudei ainda como viabilizar essa checagem
+            Fornecimento ao Felipe de script SQL em cima da AKD ( Movim Orcamentario ) para acompanhamento do PCO no Power BI.
+
+    No dia 28/06 chequei presencialmente com Camila, Felipe ( Financeiro) Felipe (TI) e Silas os Processos Operacionais qto
+        Rateios, Residuos, Entrada NF com e sem Ped de Compras
+
+    Gerado Cubo "01" com Configuracoes Previstas (PR01) e Configuracoes Realizadas (RE01)
+        PR01 => Tipos de Saldos "OR", "BX", "RS", "CT"
+        RE01 => Tipos de Saldos "EM", "RE"
+        O Saldo calculado para efeito de Bloqueio será (PR01) - (RE01)
+
+    Pendencias nesta fase do Projeto
+        Bloqueios no PC e na NF de Entrada
+        Conta e/ou CCusto ausentes na Planilha Orcamentaria
+        Tratamento quando valor do item da NF Entrada eh maior que o valor do respectivo pedido
+            Se menor OK
+            Se maior é necessário criar outro tipo de saldo?
+        Configurar, se necessario, o Processo de Inclusao de PA assim que o Silas decidir.
+        Acoes Complementares
+            Verificar conformidade de Tipos ( deb ou cre ) em cada linha de Processo
+            Verificar Posicionamento de Tabelas quando Reprocessar Movim Orcamentarios.
+                ( Posicionamento eh diferente no Lcto On-Line )
+
+    Proximos Passos 
+        Conforme acordado com Silas em 28/06/2022:
+            Na primeira quinzena de Julho implementamos os Processos em Producao sem bloqueio e sem Orcamento.
+            O objetivo é prever eventuais inconformidades que poderao se apresentar ao usuario.
+
+    Tempo Total Alocado em Junho => 65 horas 
+
+
+    
+
+    
+    
+      
 
