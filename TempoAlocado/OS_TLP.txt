@@ -166,7 +166,7 @@ Dia 09/06/2022
     Conta Orcamentaria e CCusto criados para receber ausencia de dados ( criar no SIGACTB já que está sincronizado )
         Conta Orcamentaria => 922111111 e CCusto => 7000
 
-    A Planilha Orcamentaria teve seu período mudado de Quinzenal para Mensal
+    A Planilha Orcamentaria teve seu periodo mudado de Quinzenal para Mensal
     Os Dados necessários para o correto preenchimento da Planilha foram passados para o Peterson ( via Felipe)
     No dia 23/06 o Silas recebeu orientação/treinamento presencial quanto:
         À estrutura dos Movimentos Orçamentários:
@@ -178,7 +178,7 @@ Dia 09/06/2022
                 nao estudei ainda como viabilizar essa checagem
             Fornecimento ao Felipe de script SQL em cima da AKD ( Movim Orcamentario ) para acompanhamento do PCO no Power BI.
 
-    No dia 28/06 chequei presencialmente com Camila, Felipe ( Financeiro) Felipe (TI) e Silas os Processos Operacionais qto
+    No dia 28/06 chequei presencialmente com Camila,Felipe ( Financeiro),Felipe (TI) e Silas Processos Operacionais qto a
         Rateios, Residuos, Entrada NF com e sem Ped de Compras
 
     Gerado Cubo "01" com Configuracoes Previstas (PR01) e Configuracoes Realizadas (RE01)
@@ -186,7 +186,7 @@ Dia 09/06/2022
         RE01 => Tipos de Saldos "EM", "RE"
         O Saldo calculado para efeito de Bloqueio será (PR01) - (RE01)
 
-    Pendencias nesta fase do Projeto
+        PENDENCIAS NESTA FASE DO PROJETO 
         Bloqueios no PC e na NF de Entrada
         Conta e/ou CCusto ausentes na Planilha Orcamentaria
         Tratamento quando valor do item da NF Entrada eh maior que o valor do respectivo pedido

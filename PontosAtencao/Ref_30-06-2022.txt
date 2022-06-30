@@ -1,0 +1,5 @@
+Processo 000002 - item 05  
+Checar "Script" do Bloqueio
+    PR01 ==> OR ou BX ou RS ou CT
+    RE01 ==> EM ou RE
+     
