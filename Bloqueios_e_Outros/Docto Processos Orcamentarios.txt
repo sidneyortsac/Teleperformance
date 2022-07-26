@@ -1,0 +1,133 @@
+Documentação Básica do Controle Orçamentário de Pedido de Compras e Entrada de NFs
+
+Processo 000252 - Lçtos na AKD dos valores da Planilha Orçamentária
+Lançamento:
+
+AK2->AK2_CO
+AK2->AK2_PERIOD
+"000001"
+Credito
+"LANÇAMENTO PLANILHA"
+AK2->AK2_VALOR
+"0001"
+"OR"
+"ORC_BRCT"
+"0001"
+AK2->AK2_CC
+
+Processo 000356  - Processo para controle de contingências - Não há lançamento na AKD
+Lançamento:
+item 01
+
+ALJ->ALJ_CO
+ALJ->ALJ_DATA
+"000001"
+Credito
+"LIBERACAO DE SOLICITACAO CONTINGENCIA - ITEM 01"
+ALJ->ALJ_VALOR1
+"0001"
+"CT"
+"ORC_BRCT"
+"0001"
+ALJ->ALJ_CC
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+Processo 000356  - Processo para controle de contingências - Não há lançamento na AKD
+Lançamento:
+item 02
+
+ALJ->ALJ_CO
+ALJ->ALJ_DATA
+ALJ->ALJ_CLASSE
+Credito
+"LIBERACAO SOLICITACAO DE CONTINGENCIA - ITEM 02"
+ALJ->ALJ_EMPVAL
+ALJ->ALJ_OPER
+"EM"
+"ORC_BRCT"
+"0001"
+ALJ->ALJ_CC
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+Processo 000052  - Lançamentos na AKD das emissões de Pedido de Compras
+Lançamento:
+               
+IF(GETADVFVAL("AK5","AK5_NOR",XFILIAL("AK5")+SC7->C7_CONTA,1) <> "1",SC7->C7_CONTA,"4105010004")
+SC7->C7_EMISSAO
+"000001"
+Credito
+"EMISSAO PC NUM:  " + XFILIAL("SC7") + " / " + SC7->C7_NUM
+SC7->C7_TOTAL
+"0001"
+"EP"
+"ORC_BRCT"
+"0001"
+IF((GETADVFVAL("AK5","AK5_PCO",XFILIAL("AK5")+SC7->C7_CONTA,1)="1").OR.(GETADVFVAL("AK5","AK5_NOR",XFILIAL("AK5")+SC7->C7_CONTA,1)="1").OR.(EMPTY(SC7->C7_CC)),"333333",SC7->C7_CC)
+
+Processo 000054 - Lançamentos na AKD das NFs de Entrada
+Lançamento:
+
+SD1->D1_CONTA
+SD1->D1_DTDIGIT
+"000001"
+Credito
+"ENTRADA DE NF NUM: " + SD1->D1_DOC + " DUPLICATA? : " + SF4->F4_DUPLIC
+IF(SF4->F4_DUPLIC="N".OR.SB1->B1_XCROSSD="S",0,IF(alltrim(GetAdvFVal("AK5","AK5_COSUP",XFILIAL("AK5")+SD1->D1_CONTA,1))="110401".AND.(SD1->D1_TIPO="N".OR.SD1->D1_TIPO="C"),SD1->D1_TOTAL,0))
+"0001"
+"RE"
+"ORC_BRCT"
+"0001"
+IF((GETADVFVAL("AK5","AK5_PCO",XFILIAL("AK5")+SD1->D1_CONTA,1)="1").OR.(GETADVFVAL("AK5","AK5_NOR",XFILIAL("AK5")+SD1->D1_CONTA,1)="1").OR.(EMPTY(SD1->D1_CC)),"333333",SD1->D1_CC)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+Processo 000052  -  Processo referente às emissões de Pedido de Compras para adicionar o valor do Pedido em Tela com o conteúdo acumulado no DataBase
+Bloqueio:                                                             
+        
+IF(GetAdvFVal("AK5","AK5_NOR",XFILIAL("AK5")+GdFieldGet('C7_CONTA'),1) <> "1",GdFieldGet('C7_CONTA'),"4105010004")
+dA120Emis
+"000001"
+Credito
+"BLOQUEIO PEDIDO DE COMPRAS - CONTATAR GESTOR ORÇAMENTÁRIO"
+"0001"
+IF(ALLTRIM(GETADVFVAL("AK5","AK5_COSUP",XFILIAL("AK5")+GDFIELDGET('C7_CONTA'),1)) ="110401","SB","EP")
+IF(ALLTRIM(GETADVFVAL("AK5","AK5_COSUP",XFILIAL("AK5")+GDFIELDGET('C7_CONTA'),1)) ="110401",0,GDFIELDGET('C7_TOTAL'))
+"ORC_BRCT"
+"0001"
+IF((GETADVFVAL("AK5","AK5_PCO",XFILIAL("AK5")+GDFIELDGET('C7_CONTA'),1)="1").OR.(GETADVFVAL("AK5","AK5_NOR",XFILIAL("AK5")+GDFIELDGET('C7_CONTA'),1)="1").OR.(EMPTY(GDFIELDGET('C7_CC'))),"333333",GDFIELDGET('C7_CC'))
+
+Bloqueio(000052) Ativo:  Vincula o Bloqueio dos Pedidos de Compras ao Cubo correspondente
+
+01
+001
+
+Processo 000054 - Processo referente às entradas de NFs para adicionar o valor da Nota em Tela com o conteúdo acumulado no DataBase
+Bloqueio:
+
+GDFIELDGET('D1_CONTA')
+GDFIELDGET('D1_DTDIGIT')
+"000001"
+Credito
+"ENTRADA DE NF NUM: " + cNFiscal
+"0001"
+"RE"
+IF(SF4->F4_DUPLIC="N".OR.SB1->B1_XCROSSD="S",0,IF(alltrim(GetAdvFVal("AK5","AK5_COSUP",XFILIAL("AK5")+GDFIELDGET('D1_CONTA'),1))="110401".AND.(cTipo="N".OR.cTipo="C"),GDFIELDGET('D1_TOTAL'),0))
+"ORC_BRCT"
+"0001"
+IF((GETADVFVAL("AK5","AK5_PCO",XFILIAL("AK5")+GDFIELDGET('D1_CONTA'),1)="1").OR.(GETADVFVAL("AK5","AK5_NOR",XFILIAL("AK5")+GDFIELDGET('D1_CONTA'),1)="1").OR.(EMPTY(GDFIELDGET('D1_CC'))),"333333",GDFIELDGET('D1_CC'))
+
+Bloqueio(000054) Ativo: Vincula o Bloqueio das NFs de Entrada ao Cubo correspondente
+
+01
+002
+
+
+Cubos:
+
+01 - Pedidos de Compras 
+     Conta Orçamentária+Centro de Custo + Tipo de Saldo ==> AKD->AKD_CO + AKD->AKD_CC + AKD->AKD_TPSALD
+	 SaldoPrevisto  ==> Tipo de Saldo = "CT" ou Tipo de Saldo = "OR"
+	 SaldoRealizado ==> Tipo de Saldo = "EP" ou Tipo de Saldo = "EM"
+	 Apuração Mensal, Saldo Considera o Acumulado Retroativo
+	 
+02 - Nota Fiscal de Entrada
+     Conta Orçamentária+Centro de Custo + Tipo de Saldo ==> AKD->AKD_CO + AKD->AKD_CC + AKD->AKD_TPSALD
+	 SaldoPrevisto  ==> Tipo de Saldo = "CT" ou Tipo de Saldo = "OR"
+	 SaldoRealizado ==> Tipo de Saldo = "RE" ou Tipo de Saldo = "EM"
+	 Apuração Mensal, Saldo Considera o Acumulado Retroativo	 

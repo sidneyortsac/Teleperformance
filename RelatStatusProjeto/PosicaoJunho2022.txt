@@ -71,5 +71,39 @@ Status Projeto TLP Junho/2022
         Conforme acordado com Silas em 28/06/2022:
             Na primeira quinzena de Julho implementamos os Processos em Producao sem bloqueio e sem Orcamento.
             O objetivo é prever eventuais inconformidades que poderao se apresentar ao usuario.
+			
+	
+	=============================================================
+							GetAdvFval(cAlias,uCpo,uChave,nOrder,uDef)
+                                cAlias  ==> Alias do Arquivo
+                                uCpo    ==> Nome de um campo ou array contendo os nomes dos campos desejados
+                                uChave  ==> Chave para a pesquisa
+                                nOrder  ==> Ordem do índice para a pesquisa
+                                uDef    ==> Valor a ser retornado caso a chave não seja encontrada 
+								
+							Ordem da AK2 2 AK2->AK2_FILIAL + AK2->AK2_CO + AK2->AK2_CLASSE + AK2->AK2_OPER + AK2->AK2_CHAVE	
+	
+	
+	
+	comportamento PCO quando CC nao tiver Orcamento
+	
+	IF(SE2->E2_MULTNAT = "1",0,IF(SE2->E2_TIPO="PA".OR.SE2->E2_TIPO="PR",0,SE2->E2_VALOR))
+	
+	IF(SE2->E2_MULTNAT = "1".OR.SE2->E2_TIPO $ "PA-PR",0,IF(GETADVFVAL("AK2","AK2_CO",XFILIAL("AK2")+AKC->AKC_CLASSE+AKC->AKC_OPER+AK2->AK2_CHAVE,"9"),0.01,SE2->E2_VALOR))
+	
+	IF(SE2->E2_MULTNAT = "1".OR.SE2->E2_TIPO $ "PA-PR",0,IF(GETADVFVAL("AK2","AK2_CO",XFILIAL("AK2")+AKC->AKC_CLASSE+AKC->AKC_OPER+AK2->AK2_CHAVE,"9"),0.01,SE2->E2_VALOR))
+	
+	IIF (SD2->D2_TIPO $ 'BD')
+	
+	
+	
+	
+
+	
+	
+	IF(SE2->E2_MULTNAT = "1",0, Tipo)
+	
+	Tipo = IF(SE2->E2_TIPO="PA".OR.SE2->E2_TIPO="PR",0,SE2->E2_VALOR)
+    IF(	
 
     
