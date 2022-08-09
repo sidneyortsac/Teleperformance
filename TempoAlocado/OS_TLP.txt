@@ -203,7 +203,9 @@ Dia 09/06/2022
             Na primeira quinzena de Julho implementamos os Processos em Producao sem bloqueio e sem Orcamento.
             O objetivo é prever eventuais inconformidades que poderao se apresentar ao usuario.
 
-    Tempo Total Alocado em Junho => 65 horas 
+    Tempo Total Alocado em Junho => 65 horas
+    
+     
 
 
     

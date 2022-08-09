@@ -28,7 +28,7 @@ Dia 08/08/2022
             Atualizado	==>  SC7->(C7_TOTAL+C7_FRETE+C7_VALIPI+C7_SEGURO+C7_DESPESA+C7_VALFRE-C7_DESC)
 
             Abertura Chamado TOTVS:
-            Em termos de Compartilahmento as tabelas abaixo estão assim configuradas:
+            Em termos de Compartilhamento as tabelas abaixo estão assim configuradas:
             AKS010 - Saldo Mensal Cubos  C   C   C
             AKT010 - Movi Diario  Cubos  C   C   C
 
