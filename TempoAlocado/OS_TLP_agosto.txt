@@ -1,0 +1,40 @@
+Dia 04/08/2022
+    Presencial TLP
+        Início 10:00 
+            Treinamento com Felipe sobre preenchimento Planilha Orcamentária
+        Término 12:00
+    Horas 2 horas Atividade + 01 hora translado
+    Total 3 horas
+
+Dia 08/08/2022
+    Reprocessamento
+        Início 08:00
+            Checando Lançamentos AKD
+            Acerto na Teste e na Produção no campo Valor do Processo 000002 por conta de duplicidade de lançamentos em relação aos Processos 000054 ==> Entrada de NF e 000002 ==> Inclusao Contas a Pagar.
+
+            IF(SE2->E2_MULTNAT = "1",0, IF(SE2->E2_TIPO="PA".OR.SE2->E2_TIPO="PR",0,SE2->E2_VALOR))
+            If(Alltrim(SE2->E2_ORIGEM)=="MATA100", 0, SE2->E2_VALOR)
+
+            IF(SE2->E2_MULTNAT = "1",0, IF(SE2->E2_TIPO="PA".OR.SE2->E2_TIPO="PR",0,SE2->E2_VALOR))
+            If(Alltrim(SE2->E2_ORIGEM)=="MATA100", 0, IF(SE2->E2_MULTNAT = "1",0, IF(SE2->E2_TIPO="PA".OR.SE2->E2_TIPO="PR",0,SE2->E2_VALOR)))
+
+            Acerto também no campo Historico
+
+            Original:  "DOC " + SE2->E2_NUM + " FORNEC " + SE2->E2_FORNECE
+            Atual "DOC " + SE2->E2_NUM + " FORNEC " + SE2->E2_FORNECE + " " + SE2->E2_ORIGEM
+
+            Alteracao Valor da Baixa de Pedidos
+            Original 	==>  SD1->D1_TOTAL+SD1->D1_VALIPI-SD1->D1_VALDESC+SD1->D1_VALFRE
+            Atualizado	==>  SC7->(C7_TOTAL+C7_FRETE+C7_VALIPI+C7_SEGURO+C7_DESPESA+C7_VALFRE-C7_DESC)
+
+            Abertura Chamado TOTVS:
+            Em termos de Compartilahmento as tabelas abaixo estão assim configuradas:
+            AKS010 - Saldo Mensal Cubos  C   C   C
+            AKT010 - Movi Diario  Cubos  C   C   C
+
+            Exatamente como a AKD
+            Mas apenas a AKT010 está sendo populada quando se Reprocessa "Cubos Gerenciais"
+        Termino 17:00
+        Horas ==> 8
+
+        
