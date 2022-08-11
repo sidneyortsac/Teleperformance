@@ -1,0 +1,3 @@
+Alterar os Tipos para "1" (Credito) os Processos 000052 e 000054
+Tipos de Saldos "EM" e "RE"
+Observar que no Processo 000054-15 ( Baixa do Pedido ) não é necessária nenhuma mudança
