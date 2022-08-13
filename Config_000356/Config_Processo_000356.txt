@@ -1,0 +1,51 @@
+Config_Processo_000356
+
+Item 01
+
+CO - ALJ->ALJ_CO
+
+Data - ALJ->ALJ_DATA
+
+Classe - "000001"
+
+Tipo - Credito
+
+Hist - "LIBERACAO DE CONTINGENCIA - ITEM 01"
+
+Operacao - "0001"
+
+TpSaldo - "CT"
+
+Valor - ALJ->ALJ_VALOR1
+
+CodPlan - "ORCA-2022"
+
+Versao - "0001"
+
+CCusto - ALJ->ALJ_CC
+
+=======================================
+
+Item 02
+
+CO - ALJ->ALJ_CO
+
+Data - ALJ->ALJ_DATA
+
+Classe - "000001"
+
+Tipo - Credito
+
+Hist - "LIBERACAO SOLICITACAO DE CONTINGENCIA - ITEM 02"
+
+Operacao - "0001"
+
+TpSaldo - "EC"
+
+Valor - ALJ->ALJ_EMPVAL
+
+CodPlan - "ORCA-2022"
+
+Versao - "0001"
+
+CCusto - ALJ->ALJ_CC
