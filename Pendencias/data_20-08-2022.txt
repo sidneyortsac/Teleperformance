@@ -1,0 +1,12 @@
+Verificar a questao 
+    GDFIELDGET('VALOR1') + GDFIELDGET('VALOR2') # Type on mismatch
+
+Configurar Bloqueio apenas para CCustos 1200 e 1201
+
+AKS  ==>  responder à Totvs
+
+Esclarecer Gilmar sobre:
+    NF de Entrada # data de digitacao e o problema do periodo orcamentario
+    NF de Entrada # Sempre eh acionada a "procura" do Ped Compras?
+    Questao dos valores
+    Questao dos calculos em funcao dos Tipos de Saldos
