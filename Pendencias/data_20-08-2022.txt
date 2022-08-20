@@ -10,3 +10,4 @@ Esclarecer Gilmar sobre:
     NF de Entrada # Sempre eh acionada a "procura" do Ped Compras?
     Questao dos valores
     Questao dos calculos em funcao dos Tipos de Saldos
+    Falar sobre o MBI010
