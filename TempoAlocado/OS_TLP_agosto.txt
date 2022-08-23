@@ -37,4 +37,23 @@ Dia 08/08/2022
         Termino 17:00
         Horas ==> 8
 
+Dia 17/08/2022
+    Google Meets
+        Inicio: 09:00
+            Participantes:
+                Felipe, Gilmar, Ana, Peterson, Sidney
+        Termino: 11:00
+        Horas ==> 2
+
+Dia 19/08/2022
+    Inicio: 08:30
+        Preparação documentação a ser enviada para apreciação Gilmar.
+            Especificacao Geral Projeto
+            "Configuracao" Relatorio Demonstrativo Por Conta e CC.
+    Termino: 15:30
+    Horas ==> 6
+
+
+
+
         
