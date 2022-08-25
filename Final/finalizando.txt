@@ -1,0 +1,9 @@
+totaliti     ==> scastro@issl.com.br		 sid123
+JESUS PEDRO  ==> sidneyortsac@gmail.com      data1407
+
+Construir o Cubo de bloqueio filtrando os CCusto 1200 e 1201.
+Verificar os lctos 000356
+Verificar os Parametros:
+MV_PCOSDCT .T.
+MV_PCOCTGP .T.
+MV_PCOEMCT 
