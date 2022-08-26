@@ -1,10 +1,33 @@
-totaliti     ==> scastro@issl.com.br		 sid123
-JESUS PEDRO  ==> sidneyortsac@gmail.com      data1407
+totaliti     000815 ==> scastro@issl.com.br		        sid123
+JESUS PEDRO  000511 ==> sidneyortsac@gmail.com          data1407
+SILAS CASTRO 000523 ==> silas.castro@tlpservicos.com.br ******
 
 Construir o Cubo de bloqueio filtrando os CCusto 1200 e 1201.
+    Cod Cubo 20
+    Tipo Bloqueio T20
+        Processo 000052 seq 01 item 01
+        Processo 000054 seq 01 item 01
+        Processo 000054 seq 01 item 09
 Verificar os lctos 000356
+    Itens 01 e 02 OK
 Verificar os Parametros:
-MV_PCOSDCT .T.
-MV_PCOCTGP .T.
-MV_PCOEMCT .T. 
+MV_PCOSDCT .T. OK
+MV_PCOCTGP .T. OK 
+MV_PCOEMCT .T. OK 
 Conferir os lctos de Bloqueio - Proc 000052 e 000054
+    Processo 000052 seq 01 item 01
+    Processo 000054 seq 01 item 01
+    Processo 000054 seq 01 item 09
+Grupos Aprovacao PCO
+    Compartilhar Tabela ALM     C   C   C 
+
+===============
+Criando Cubo para CCusto 1200 JESUS PEDRO  000511 OK
+Criando Cubo para CCusto 1201 SILAS CASTRO 000523 OK 
+
+Compartilhar ALK010     C C C  OK 
+
+Criando Aprovadores        OK
+Criando Limites Aprovacao  OK
+
+
