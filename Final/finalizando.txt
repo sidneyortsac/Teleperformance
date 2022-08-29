@@ -4,7 +4,9 @@ SILAS CASTRO 000523 ==> silas.castro@tlpservicos.com.br ******
 
 Construir o Cubo de bloqueio filtrando os CCusto 1200 e 1201.
     Cod Cubo 20
-    Tipo Bloqueio T20
+    Cod Cubo 40
+    Cod Cubo 60
+    Tipo Bloqueio T20, 40 e 60
         Processo 000052 seq 01 item 01
         Processo 000054 seq 01 item 01
         Processo 000054 seq 01 item 09
@@ -19,15 +21,19 @@ Conferir os lctos de Bloqueio - Proc 000052 e 000054
     Processo 000054 seq 01 item 01
     Processo 000054 seq 01 item 09
 Grupos Aprovacao PCO
-    Compartilhar Tabela ALM     C   C   C 
+    Compartilhar Tabela ALM     C   C   C  OK
 
 ===============
 Criando Cubo para CCusto 1200 JESUS PEDRO  000511 OK
 Criando Cubo para CCusto 1201 SILAS CASTRO 000523 OK 
 
-Compartilhar ALK010     C C C  OK 
+Compartilhar ALK010     C C C  OK
+Compartilhar ALJ010     C C C  OK
+Compartilhar ALI010     C C C  OK 
 
 Criando Aprovadores        OK
 Criando Limites Aprovacao  OK
+
+Testando....
 
 
