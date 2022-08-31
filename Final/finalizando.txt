@@ -15,7 +15,8 @@ Verificar os lctos 000356
 Verificar os Parametros:
 MV_PCOSDCT .T. OK
 MV_PCOCTGP .T. OK 
-MV_PCOEMCT .T. OK 
+MV_PCOEMCT .T. OK
+MV_PCOWFCT  0  OK  
 Conferir os lctos de Bloqueio - Proc 000052 e 000054
     Processo 000052 seq 01 item 01
     Processo 000054 seq 01 item 01
